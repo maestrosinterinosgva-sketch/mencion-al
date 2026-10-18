@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mención en Audición y Lenguaje — UCJC (2026–2027)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- SIDEBAR DE NAVEGACIÓN ESTILO GOOGLE CLASSROOM + POMODORO -->
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="brand-header">
+        <div class="brand-logo" aria-hidden="true">AL</div>
+        <div>
+          <h1 class="brand-title">Mención Audición y Lenguaje</h1>
+          <p class="brand-subtitle">UCJC · Classroom 2026/27</p>
+        </div>
+      </div>
+
+      <div class="nav-section-label">Vista Principal</div>
+      <ul class="nav-list">
+        <li>
+          <button type="button" class="nav-btn active" data-view="calendario" id="nav-btn-home">
+            <span class="nav-btn-left">🏠 Inicio: Calendario y Clases</span>
+            <span class="nav-badge" id="badge-pending-count">25</span>
+          </button>
+        </li>
+      </ul>
+
+      <div class="nav-section-label">Mis Clases (Asignaturas AL)</div>
+      <ul class="nav-list" id="sidebar-classroom-list">
+        <!-- Se puebla dinámicamente con las 5 asignaturas -->
+      </ul>
+
+      <div class="nav-section-label">Herramientas Globales</div>
+      <ul class="nav-list">
+        <li>
+          <button type="button" class="nav-btn" data-view="tareas">
+            <span class="nav-btn-left">📝 Copiloto de Tareas (Todas)</span>
+            <span class="nav-badge">30</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-view="unidades">
+            <span class="nav-btn-left">📚 Las 25 Unidades y PDFs</span>
+            <span class="nav-badge" id="badge-units-count">0/25</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-view="estudio">
+            <span class="nav-btn-left">🎯 Simulacro Global y Flashcards</span>
+            <span class="nav-badge">60%</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-view="clinica">
+            <span class="nav-btn-left">🩺 Herramientas Clínicas AL</span>
+            <span class="nav-badge">Atlas/SAAC</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="nav-btn" data-view="notas">
+            <span class="nav-btn-left">🧮 Calculadora Notas UCJC</span>
+            <span class="nav-badge">100%/95%</span>
+          </button>
+        </li>
+      </ul>
+
+      <!-- Temporizador Pomodoro de Estudio -->
+      <div class="pomodoro-card" aria-label="Temporizador de estudio Pomodoro">
+        <div class="pomodoro-header">
+          <span>⏱️ Pomodoro Estudio AL</span>
+          <span id="pomo-mode-label">Enfoque 25m</span>
+        </div>
+        <div class="pomodoro-time" id="pomo-display">25:00</div>
+        <div class="pomodoro-controls">
+          <button type="button" class="primary" id="pomo-toggle-btn">Iniciar</button>
+          <button type="button" id="pomo-mode-btn">5m Pausa</button>
+          <button type="button" id="pomo-reset-btn">Reset</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <div class="main-area">
+      <!-- BARRA SUPERIOR -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="global-search-wrap">
+            <span class="global-search-icon" aria-hidden="true">🔍</span>
+            <input
+              type="search"
+              id="global-search-input"
+              class="global-search-input"
+              placeholder="Buscar entrega, unidad, síndrome, prueba (PROLEC-R, CELF-5, PECS)..."
+              aria-label="Buscador global de la mención"
+            />
+          </div>
+        </div>
+        <div class="topbar-right">
+          <select id="global-subject-filter" class="subject-filter-select" aria-label="Filtrar por asignatura">
+            <option value="all">Todas las asignaturas (5)</option>
+          </select>
+          <button
+            type="button"
+            class="btn btn-sm"
+            id="neon-sync-btn"
+            style="background:var(--accent-emerald-soft); color:var(--accent-emerald); border-color:rgba(5,150,105,0.3); font-weight:700;"
+            title="Sincronización automática en tiempo real con Neon PostgreSQL (herrizpab@gmail.com). Pulsa para forzar sincronización."
+          >
+            ☁️ Neon Cloud: Sincronizado
+          </button>
+          <button type="button" class="btn btn-gcal btn-sm" id="open-gcal-modal-btn" title="Añadir calendario a Google Calendar (herrizpab@gmail.com)">
+            📅 Añadir a Google Calendar (herrizpab@gmail.com)
+          </button>
+          <button type="button" class="btn btn-sm" id="export-backup-btn" title="Guardar copia de seguridad de tu progreso y apuntes">
+            💾 Backup JSON
+          </button>
+          <button type="button" class="btn btn-sm" id="theme-toggle-btn" title="Alternar modo claro / oscuro">
+            🌙 Tema
+          </button>
+        </div>
+      </header>
+
+      <!-- CONTENEDOR DE VISTAS -->
+      <main class="content-container">
+        <!-- ================================================================
+             VISTA 1 (INICIO):
+             1º CALENDARIO MENSUAL NORMAL AL PRINCIPIO DE LA WEB
+             2º AGRUPACIÓN POR ASIGNATURAS FORMATO GOOGLE CLASSROOM DEBAJO
+             ================================================================ -->
+        <section id="view-calendario" class="view-section active" aria-labelledby="heading-calendario">
+          <!-- PARTE SUPERIOR: CALENDARIO NORMAL DE ENTREGAS -->
+          <div class="section-header">
+            <div>
+              <h2 id="heading-calendario" class="section-title">📅 Calendario Mensual de Entregas — Mención AL (UCJC)</h2>
+              <p class="section-desc">
+                Todas las tareas a entregar en cada día. Pulsa <strong>+GCal</strong> en cualquier tarea para guardarla en <code>herrizpab@gmail.com</code> o baja para entrar a tus <strong>Clases en formato Google Classroom</strong>.
+              </p>
+            </div>
+            <div class="subview-tabs">
+              <button type="button" class="tab-pill active" data-cal-mode="mensual">🗓️ Calendario Mensual</button>
+              <button type="button" class="tab-pill" data-cal-mode="lista">📋 Lista (Fechas / Asignaturas)</button>
+              <button type="button" class="tab-pill" data-cal-mode="kanban">📌 Kanban</button>
+              <button type="button" class="btn btn-gcal btn-sm" id="cal-sync-gcal-btn">📅 Sincronizar con herrizpab@gmail.com</button>
+              <button type="button" class="btn btn-primary btn-sm" id="add-custom-event-btn">+ Añadir Recordatorio</button>
+            </div>
+          </div>
+
+          <div id="cal-mode-mensual">
+            <div class="calendar-toolbar">
+              <div class="cal-nav-controls">
+                <button type="button" class="btn btn-sm" id="cal-prev-month-btn">◀ Mes Anterior</button>
+                <h3 class="cal-month-heading" id="cal-current-month-title">Noviembre 2026</h3>
+                <button type="button" class="btn btn-sm" id="cal-next-month-btn">Mes Siguiente ▶</button>
+              </div>
+              <div class="month-tabs" id="calendar-month-tabs"></div>
+            </div>
+
+            <div class="calendar-grid" id="calendar-grid-container"></div>
+          </div>
+
+          <div id="cal-mode-lista" style="display:none;">
+            <div class="card" id="calendar-timeline-container"></div>
+          </div>
+
+          <div id="cal-mode-kanban" style="display:none;">
+            <div class="kanban-grid" id="calendar-kanban-container"></div>
+          </div>
+
+          <!-- PARTE INFERIOR DE INICIO: CLASES AGRUPADAS EN FORMATO GOOGLE CLASSROOM -->
+          <div id="classroom-home-wrapper">
+            <div class="classroom-section-header">
+              <h2 class="classroom-section-title">🎓 Clases — Mención Audición y Lenguaje (2026/27)</h2>
+              <span style="font-size:0.84rem; color:var(--text-muted);">
+                Haz clic en cualquier asignatura para abrir su Aula Classroom (Tablón, Trabajo de clase, Unidades PDF, Test y Calificaciones)
+              </span>
+            </div>
+            <div class="classroom-grid" id="classroom-cards-grid"></div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             VISTA AULA INTERNA DE UNA ASIGNATURA (FORMATO GOOGLE CLASSROOM)
+             Se abre al hacer clic en una tarjeta de asignatura o desde el menú lateral
+             ================================================================ -->
+        <section id="view-classroom-subject" class="view-section" aria-labelledby="heading-classroom-subject">
+          <div id="classroom-subject-container"></div>
+        </section>
+
+        <!-- ================================================================
+             VISTA 2: PANEL DE CONTROL GLOBAL
+             ================================================================ -->
+        <section id="view-dashboard" class="view-section" aria-labelledby="heading-dashboard">
+          <div class="section-header">
+            <div>
+              <h2 id="heading-dashboard" class="section-title">Panel de Control — Mención en Audición y Lenguaje</h2>
+              <p class="section-desc">
+                Seguimiento oficial del Semestre 1 UCJC: fechas recomendadas (calificación sobre <strong>100%</strong>), fecha límite global de evaluación continua (<strong>21 de enero de 2027 sobre 95%</strong>) y Examen Final Proctoring (<strong>5 de febrero de 2027 · 60% de la nota</strong>).
+              </p>
+            </div>
+          </div>
+          <div class="kpi-grid" id="dashboard-kpis"></div>
+          <div class="subjects-grid" id="dashboard-subjects-grid"></div>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1.25rem;">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">🚨 Próximas Entregas Oficiales (Prioridad 100% Nota)</h3>
+              </div>
+              <div id="dashboard-upcoming-list"></div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">⚖️ Reglas Clave de Evaluación UCJC (Semestre 1)</h3>
+                <span class="badge badge-info">Normativa Oficial</span>
+              </div>
+              <div id="dashboard-rules-box" style="font-size:0.86rem; display:flex; flex-direction:column; gap:0.65rem;"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             VISTA 3: ASISTENTE DE TAREAS Y PLANTILLAS (COPILOTO GLOBAL)
+             ================================================================ -->
+        <section id="view-tareas" class="view-section" aria-labelledby="heading-tareas">
+          <div class="section-header">
+            <div>
+              <h2 id="heading-tareas" class="section-title">Copiloto de Actividades, Talleres Prácticos y Portfolios</h2>
+              <p class="section-desc">
+                Selecciona cualquiera de las 30 entregas oficiales para ver sus criterios de calificación, guía clínica paso a paso, checklist de subtareas, plantilla lista para copiar/descargar y tu bloc de borrador personal.
+              </p>
+            </div>
+            <div class="subview-tabs" id="task-type-filters">
+              <button type="button" class="tab-pill active" data-task-type="all">Todas (30)</button>
+              <button type="button" class="tab-pill" data-task-type="Taller Práctico">Talleres (10)</button>
+              <button type="button" data-task-type="Actividad" class="tab-pill">Actividades (10)</button>
+              <button type="button" data-task-type="Portfolio Final" class="tab-pill">Portfolios (5)</button>
+              <button type="button" data-task-type="Examen Final" class="tab-pill">Exámenes (5)</button>
+            </div>
+          </div>
+
+          <div class="tasks-layout">
+            <div class="task-selector-list" id="task-selector-list" aria-label="Lista de entregas"></div>
+            <div class="task-workspace" id="task-workspace-detail"></div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             VISTA 4: TEMARIO OFICIAL (25 UNIDADES) Y VISOR PDF INTEGRADO
+             Implementa [hidden="until-found"] + evento beforematch para que
+             Ctrl+F encuentre cualquier concepto incluso en unidades plegadas.
+             ================================================================ -->
+        <section id="view-unidades" class="view-section" aria-labelledby="heading-unidades">
+          <div class="section-header">
+            <div>
+              <h2 id="heading-unidades" class="section-title">Biblioteca de las 25 Unidades Didácticas y Visor PDF Oficial</h2>
+              <p class="section-desc">
+                Resúmenes ejecutivos, ideas clave de examen, tablas comparativas y acceso directo a los 29 documentos PDF oficiales. Compatible con búsqueda nativa <code>Ctrl+F</code> incluso en bloques plegados.
+              </p>
+            </div>
+            <div style="display:flex; gap:0.5rem;">
+              <button type="button" class="btn btn-sm" id="expand-all-units-btn">Expandir todas</button>
+              <button type="button" class="btn btn-sm" id="collapse-all-units-btn">Plegar todas</button>
+            </div>
+          </div>
+
+          <div id="units-list-container"></div>
+        </section>
+
+        <!-- ================================================================
+             VISTA 5: CENTRO DE ESTUDIO ACTIVO (SIMULADOR TEST + FLASHCARDS)
+             ================================================================ -->
+        <section id="view-estudio" class="view-section" aria-labelledby="heading-estudio">
+          <div class="section-header">
+            <div>
+              <h2 id="heading-estudio" class="section-title">Centro de Estudio Activo — Simulador Examen Tipo Test y Flashcards</h2>
+              <p class="section-desc">
+                El examen final con Proctoring supone el <strong>60% de la calificación (6,0 puntos)</strong> y es 100% tipo test. Entrena con preguntas justificadas por asignatura y domina los conceptos clave con tarjetas 3D.
+              </p>
+            </div>
+            <div class="subview-tabs">
+              <button type="button" class="tab-pill active" data-study-tab="quiz">📝 Simulador Examen Tipo Test</button>
+              <button type="button" class="tab-pill" data-study-tab="flashcards">🗂️ Flashcards Interactivas 3D</button>
+              <button type="button" class="tab-pill" data-study-tab="glosario">📖 Glosario Clínico Completo</button>
+            </div>
+          </div>
+
+          <div id="study-tab-quiz"></div>
+          <div id="study-tab-flashcards" style="display:none;"></div>
+          <div id="study-tab-glosario" style="display:none;"></div>
+        </section>
+
+        <!-- ================================================================
+             VISTA 6: HERRAMIENTAS CLÍNICAS INTERACTIVAS DE AUDICIÓN Y LENGUAJE
+             ================================================================ -->
+        <section id="view-clinica" class="view-section" aria-labelledby="heading-clinica">
+          <div class="section-header">
+            <div>
+              <h2 id="heading-clinica" class="section-title">Caja de Herramientas Clínicas de Audición y Lenguaje</h2>
+              <p class="section-desc">
+                Utilidades de consulta rápida para resolver tus casos prácticos y talleres: Pares Craneales y Áreas de Brodmann, Diferenciador TDL (Delphi 2026), Matriz de Dislexias/Disortografía y Selector de SAAC/ComFor.
+              </p>
+            </div>
+          </div>
+
+          <div id="clinical-tools-container"></div>
+        </section>
+
+        <!-- ================================================================
+             VISTA 7: CALCULADORA DE NOTAS UCJC (100% vs 95% + EXAMEN 60%)
+             ================================================================ -->
+        <section id="view-notas" class="view-section" aria-labelledby="heading-notas">
+          <div class="section-header">
+            <div>
+              <h2 id="heading-notas" class="section-title">Simulador y Calculadora de Calificaciones Oficiales UCJC</h2>
+              <p class="section-desc">
+                Introduce tus notas en Actividades (20%), Talleres Prácticos (10%) y Portfolio (10%), marcando si entregaste en fecha recomendada (<strong>100%</strong>) o después (<strong>95%</strong>). Calcula automáticamente qué nota necesitas en el Examen Final (60%) para aprobar (≥5,0) o sacar Sobresaliente.
+              </p>
+            </div>
+          </div>
+
+          <div id="grades-calculator-container"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL NATIVO <dialog closedby="any"> PARA SINCRONIZAR GOOGLE CALENDAR (herrizpab@gmail.com)
+       Cumple con modern-web-guidance: platform-controls-dismiss-dialog
+       ====================================================================== -->
+  <dialog id="gcal-dialog" class="app-dialog" closedby="any" aria-labelledby="gcal-dialog-title" style="max-width:780px;">
+    <div class="dialog-header">
+      <div>
+        <h3 id="gcal-dialog-title" style="margin:0; font-size:1.05rem;">📅 Añadir Calendario de Entregas a Google Calendar (herrizpab@gmail.com)</h3>
+        <small style="color:var(--text-muted);">Sincronización completa de las 30 entregas + hito límite 21 de enero 2027</small>
+      </div>
+      <form method="dialog" style="margin:0;">
+        <button type="submit" class="btn btn-sm" aria-label="Cerrar ventana de Google Calendar">✕ Cerrar (Esc)</button>
+      </form>
+    </div>
+    <div class="dialog-body">
+      <div style="background:var(--bg-surface-alt); border:1px solid var(--border-strong); border-radius:12px; padding:1.15rem; margin-bottom:1.25rem;">
+        <h4 style="margin:0 0 0.5rem; font-size:0.98rem;">⚡ Opción Recomendada: Importar TODAS las 31 fechas de golpe en <code>herrizpab@gmail.com</code> (10 segundos)</h4>
+        <p style="margin:0 0 0.85rem; font-size:0.86rem; color:var(--text-secondary);">
+          Ya tienes generado en tu carpeta el archivo <strong><code>Calendario_Mencion_AL_UCJC_herrizpab.ics</code></strong> con todas las entregas (incluyendo alarmas automáticas 3 días y 1 día antes). Sigue estos 2 pasos:
+        </p>
+        <div style="display:flex; gap:0.65rem; flex-wrap:wrap; align-items:center;">
+          <button type="button" class="btn btn-primary" id="modal-download-ics-btn">
+            1️⃣ Descargar Calendario_Mencion_AL_UCJC_herrizpab.ics
+          </button>
+          <a
+            href="https://calendar.google.com/calendar/r/settings/export?authuser=herrizpab@gmail.com"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-gcal"
+          >
+            2️⃣ Abrir Importador de Google Calendar (herrizpab@gmail.com) ↗
+          </a>
+        </div>
+        <p style="margin:0.65rem 0 0; font-size:0.78rem; color:var(--text-muted);">
+          En la pantalla de Google Calendar que se abre (ya conectada a <strong>herrizpab@gmail.com</strong>), pulsa <em>"Seleccionar un archivo del ordenador"</em>, elige <code>Calendario_Mencion_AL_UCJC_herrizpab.ics</code> y haz clic en <strong>Importar</strong>.
+        </p>
+      </div>
+
+      <h4 style="margin:0 0 0.6rem; font-size:0.95rem;">📌 O añade entregas individualmente con 1 clic en <code>herrizpab@gmail.com</code>:</h4>
+      <div id="gcal-modal-events-list" style="max-height:380px; overflow-y:auto; border:1px solid var(--border-color); border-radius:8px; padding:0.5rem;"></div>
+    </div>
+  </dialog>
+
+  <!-- ======================================================================
+       MODAL NATIVO <dialog closedby="any"> PARA VISOR PDF INTEGRADO
+       ====================================================================== -->
+  <dialog id="pdf-dialog" class="app-dialog" closedby="any" aria-labelledby="pdf-dialog-title">
+    <div class="dialog-header">
+      <div>
+        <h3 id="pdf-dialog-title" style="margin:0; font-size:1rem;">Visor de Documento Oficial UCJC</h3>
+        <small id="pdf-dialog-subtitle" style="color:var(--text-muted);"></small>
+      </div>
+      <div style="display:flex; gap:0.5rem; align-items:center;">
+        <a id="pdf-external-link" href="#" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          ↗ Abrir PDF en Pestaña Nueva
+        </a>
+        <form method="dialog" style="margin:0;">
+          <button type="submit" class="btn btn-sm" aria-label="Cerrar visor PDF">✕ Cerrar (Esc)</button>
+        </form>
+      </div>
+    </div>
+    <div class="dialog-body">
+      <iframe id="pdf-iframe" class="pdf-frame" title="Visor de documento PDF de la asignatura"></iframe>
+    </div>
+  </dialog>
+
+  <!-- ======================================================================
+       MODAL NATIVO <dialog closedby="any"> PARA CREAR RECORDATORIO PERSONALIZADO
+       ====================================================================== -->
+  <dialog id="custom-event-dialog" class="app-dialog" closedby="any" aria-labelledby="custom-event-dialog-title" style="max-width:520px;">
+    <div class="dialog-header">
+      <h3 id="custom-event-dialog-title" style="margin:0; font-size:1rem;">Añadir Recordatorio o Sesión de Estudio al Calendario</h3>
+      <form method="dialog" style="margin:0;">
+        <button type="submit" class="btn btn-sm" aria-label="Cerrar ventana">✕</button>
+      </form>
+    </div>
+    <div class="dialog-body">
+      <form id="custom-event-form" style="display:flex; flex-direction:column; gap:0.85rem;">
+        <label style="font-size:0.85rem; font-weight:600;">
+          Título del recordatorio
+          <input type="text" id="ce-title" required placeholder="Ej. Repasar Unidad 3 de Anatomía / Tutoría..." class="global-search-input" style="border-radius:8px; padding-left:0.75rem; margin-top:0.3rem;" />
+        </label>
+        <label style="font-size:0.85rem; font-weight:600;">
+          Asignatura asociada
+          <select id="ce-subject" class="subject-filter-select" style="width:100%; margin-top:0.3rem;">
+            <option value="psicopatologia">Psicopatología de la Audición y el Lenguaje</option>
+            <option value="anatomia">Anatomía, Fisiología y Neurología del Lenguaje</option>
+            <option value="oral">Evaluación e Intervención en Trastornos del Lenguaje Oral</option>
+            <option value="escrita">Evaluación e Intervención en Trastornos de la Lengua Escrita</option>
+            <option value="saac">Sistemas Aumentativos y Alternativos (SAAC y TIC)</option>
+          </select>
+        </label>
+        <label style="font-size:0.85rem; font-weight:600;">
+          Fecha
+          <input type="date" id="ce-date" required value="2026-11-05" class="subject-filter-select" style="width:100%; margin-top:0.3rem;" />
+        </label>
+        <div style="display:flex; justify-content:flex-end; gap:0.5rem; margin-top:0.5rem;">
+          <button type="submit" class="btn btn-primary">Guardar en Calendario</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="data_study.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
