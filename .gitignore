@@ -1,0 +1,12 @@
+# Archivos pesados que exceden el limite de 100MB de GitHub
+*.mp4
+*.mov
+*.avi
+*.mkv
+# Archivos temporales y caches
+node_modules/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+Thumbs.db

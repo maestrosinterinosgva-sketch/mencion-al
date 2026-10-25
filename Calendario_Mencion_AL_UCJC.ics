@@ -1,0 +1,268 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mencion AL UCJC//Calendario Oficial herrizpab//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mencion AL UCJC 2026-27 (Pablo Herrero)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:psico-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Psicopatologia AL: Taller Practico 1 (Caso Real)
+DESCRIPTION:Entrega caso Lucia, Alvaro o Mario (max 2 pag PDF)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Anatomia: Taller Practico 1 (Caso Daniel)
+DESCRIPTION:Adaptaciones de aula para Daniel (5 anos, implante coclear)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Trastornos Oral: Taller Practico 1 (TEA Sensorial)
+DESCRIPTION:Casos Martin, Ismael y Alicia con Elena Perez Gutierrez
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Trastornos Escrita: Taller Practico 1 (Video Nino 8-9 anos)
+DESCRIPTION:Analisis de lectura de palabras y recomendaciones familiares
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:SAAC y TIC: Taller Practico 1 (Caso Alex)
+DESCRIPTION:Ficha de analisis critico (1 pag PDF) + cuestionario
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:Anatomia: Actividad 1 (Mapa Conceptual Pares Craneales)
+DESCRIPTION:Mapa conceptual pares craneales y su relacion con el lenguaje (2-3 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:Psicopatologia AL: Actividad 1 (Video 60s Unidad 3)
+DESCRIPTION:Video informativo max 60 segundos + cita verbal y subtitulos
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:Trastornos Oral: Actividad 1 (Caso Marco)
+DESCRIPTION:Caso Marco (5a 8m) y propuesta preventiva de aula (2-3 pag)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:SAAC y TIC: Actividad 1 (Caso Sara 8 anos)
+DESCRIPTION:Caso Sara (55 dB, FM, Bimodal) actividad de 10 min (2-4 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261126T235900
+DTEND:20261126T235900
+SUMMARY:Trastornos Escrita: Actividad 1 (Caso Nino 8 anos)
+DESCRIPTION:Analisis de lectura en video nino 8 anos (max 2 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Psicopatologia AL: Taller Practico 2 (Aula de Acogida)
+DESCRIPTION:Diseno Aula de Acogida con plano y 8 apartados (max 3 pag)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Anatomia: Taller Practico 2 (Caso Marta)
+DESCRIPTION:Caso Marta (58 anos, afasia de Broca, 4 preguntas con evidencia)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Trastornos Oral: Taller Practico 2 (Disfemia)
+DESCRIPTION:Analisis de testimonio real sobre disfemia y estrategias en el aula
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Trastornos Escrita: Taller Practico 2 (Videos Paciente TCE)
+DESCRIPTION:Analisis de numeros y lectura en paciente con TCE (max 1,5 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:SAAC y TIC: Taller Practico 2 (Aula Accesible DUA)
+DESCRIPTION:Ficha diseno aula accesible DUA (1 pag con boceto) + cuestionario
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261203T235900
+DTEND:20261203T235900
+SUMMARY:Trastornos Escrita: Actividad 2 (Analisis 2 Muestras)
+DESCRIPTION:Analisis de 6 fallos en las 2 imagenes de escritura libre (2-3 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261211T235900
+DTEND:20261211T235900
+SUMMARY:Anatomia: Actividad 2 (Caso Clinico Ficticio)
+DESCRIPTION:Caso clinico ficticio de dano neurologico/anatomico (2-3 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261211T235900
+DTEND:20261211T235900
+SUMMARY:Psicopatologia AL: Actividad 2 (Poster Cientifico)
+DESCRIPTION:Poster de congreso (1 cara) + justificacion (1 cara) de 1 articulo
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261211T235900
+DTEND:20261211T235900
+SUMMARY:Trastornos Oral: Actividad 2 (Caso Laura - Tabla pag 3)
+DESCRIPTION:Completar SOLO la tabla de pag 3 sobre el caso de Laura (fisura palatina)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270121T235900
+DTEND:20270121T235900
+SUMMARY:SAAC y TIC: Actividad 2 (AsTeRICS Grid o SymboTalk)
+DESCRIPTION:Analisis critico de herramienta CAA para TEA (2-4 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270103T235900
+DTEND:20270103T235900
+SUMMARY:Trastornos Escrita: Portfolio Final (Canva 2 min)
+DESCRIPTION:Presentacion Canva grabada de 2 minutos (P1 aprendizajes, P2 evolucion)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270115T235900
+DTEND:20270115T235900
+SUMMARY:Psicopatologia AL: Portfolio Final (Memoria 7 pag)
+DESCRIPTION:Memoria individual en Word/PDF de max 7 paginas (3 capitulos)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270115T235900
+DTEND:20270115T235900
+SUMMARY:Anatomia: Portfolio Final (Memoria 2-3 pag)
+DESCRIPTION:Memoria en Word/PDF de 2-3 paginas con autoevaluacion
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270115T235900
+DTEND:20270115T235900
+SUMMARY:Trastornos Oral: Portfolio Final (Canva con voz)
+DESCRIPTION:Canva (10-15 diapositivas) grabada con voz y heteroevaluacion
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270121T235900
+DTEND:20270121T235900
+SUMMARY:SAAC y TIC: Portfolio Final (Portafolio 6 apartados)
+DESCRIPTION:Portafolio en PDF (4-6 paginas o 6-10 diapositivas)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:examen-general@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270205T090000
+DTEND:20270205T090000
+SUMMARY:EXAMENES FINALES ORDINARIOS (Todas las Asignaturas)
+DESCRIPTION:Examenes online tipo test en Blackboard con Proctoring
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

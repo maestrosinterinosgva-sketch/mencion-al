@@ -1,562 +1,268 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//UCJC Mencion Audicion y Lenguaje//herrizpab@gmail.com//ES
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
-X-WR-CALNAME:Mención AL UCJC (herrizpab@gmail.com)
-X-WR-TIMEZONE:Europe/Madrid
-X-WR-CALDESC:Calendario oficial de entregas, talleres, portfolios y exámenes de la Mención en Audición y Lenguaje (UCJC 2026-2027)
-BEGIN:VEVENT
-UID:psico-taller-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:📌 [Psicopatología AL] Sesión Práctica 1: Caso Real (Aprendizaje Basado en Casos) (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Psicopatología de la Audición y el Lenguaje (Docente: Rocío Daniela Concha Ortiz)\\nTipo: Taller Práctico 1 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-11-06\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 2\\n\\nDescripción: Análisis de un caso clínico real sobre Trastornos de la Comunicación y el Habla (Unidad 2) + realización del cuestionario asociado en las 72h posteriores a la 3ª sesión síncrona.\\n\\nChecklist de subtareas:\\n- Asistir o visualizar la 3ª sesión síncrona de Psicopatología.\\n- Identificar los signos\\, síntomas y diagnóstico diferencial del caso (DSM-5 / CIE-11).\\n- Justificar el marco teórico y redactar las estrategias de intervención en el aula.\\n- Completar el cuestionario y subir la entrega antes de 72h (máx. 6 nov para optar al 100%).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 1: Caso Real (Aprendizaje Basado en Casos)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 1: Caso Real (Aprendizaje Basado en Casos)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:anat-taller-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:📌 [Anatomía y Neurología] Sesión Práctica 1: Sistema Nervioso\\, Audición e Hipoacusia (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Anatomía\\, Fisiología y Neurología del Lenguaje (Docente: Sara Prieto González)\\nTipo: Taller Práctico 1 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-11-06\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\n\\nDescripción: Actividad práctica y cuestionario sobre la morfología microscópica del sistema nervioso en relación con el lenguaje (II) y el sistema auditivo / dificultades en hipoacusia.\\n\\nChecklist de subtareas:\\n- Repasar Unidades 1 y 2 (especialmente epígrafe 3.2 Sistema Auditivo y Tabla 1 de Gutiérrez y Baixeras\\, 2004).\\n- Realizar la actividad práctica de la 3ª sesión síncrona.\\n- Completar el cuestionario y entregar antes de 72h tras la sesión (semana 2-6 nov).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 1: Sistema Nervioso\\, Audición e Hipoacusia
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 1: Sistema Nervioso\\, Audición e Hipoacusia
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:oral-taller-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:📌 [Trastornos Lenguaje Oral] Sesión Práctica 1: Alumnado TEA desde el Modelo de Integración Sensorial (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos del Lenguaje Oral (Docente: Soraya Rodríguez Hernández)\\nTipo: Taller Práctico 1 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-11-06\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\n\\nDescripción: Análisis práctico de casos de alumnado con TEA desde un modelo de integración sensorial (visual\\, auditivo y propioceptivo) + cuestionario.\\n\\nChecklist de subtareas:\\n- Visualizar la 3ª sesión síncrona de Lenguaje Oral.\\n- Identificar el perfil sensorial del alumno TEA del caso (hiporreactividad vs hiperreactividad).\\n- Diseñar adaptaciones concretas para los sistemas visual\\, auditivo y propioceptivo/vestibular.\\n- Entregar la actividad y el cuestionario en las 72h posteriores (semana 2-6 nov).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 1: Alumnado TEA desde el Modelo de Integración Sensorial
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 1: Alumnado TEA desde el Modelo de Integración Sensorial
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:escr-taller-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:📌 [Trastornos Lengua Escrita] Sesión Práctica 1: Evaluación de Procesos de Lectura y Normalidad Evolutiva (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos de la Lengua Escrita (Docente: David Sánchez Toribio)\\nTipo: Taller Práctico 1 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-11-06\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 2\\, Unidad 3\\n\\nDescripción: Describir y analizar el tipo de lectura de un niño/a e inferir si los procesos lectores son normales para su edad\\, diferenciando entre NEE y NEAE.\\n\\nChecklist de subtareas:\\n- Repasar el Modelo de Doble Ruta de Coltheart (Unidad 2) y la tipología de dislexias de Cuetos (Unidad 3).\\n- Analizar los errores del caso (¿lexicalizaciones en pseudopalabras o regularizaciones en palabras irregulares?).\\n- Justificar el encuadre LOMLOE (NEAE por trastorno de aprendizaje vs NEE).\\n- Entregar la práctica + cuestionario en 72h (semana 2-6 nov).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 1: Evaluación de Procesos de Lectura y Normalidad Evolutiva
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 1: Evaluación de Procesos de Lectura y Normalidad Evolutiva
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:saac-taller-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261106
-DTEND;VALUE=DATE:20261107
-SUMMARY:📌 [SAAC y TIC] Sesión Práctica 1: Evaluación\\, Selección de SAAC y Discapacidad Auditiva (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (Docente: Equipo Docente AL (Calendario estándar UCJC))\\nTipo: Taller Práctico 1 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-11-06\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\n\\nDescripción: Actividad práctica sobre evaluación ecológica para la elección de un SAAC (Test ComFor\\, taxonomía) y aplicación en discapacidad auditiva (Fecha estándar UCJC - editable).\\n\\nChecklist de subtareas:\\n- Revisar la planificación o el aula virtual de SAAC para confirmar la fecha exacta de la 3ª sesión síncrona.\\n- Analizar los 3 componentes del SAAC del caso: Símbolos\\, Producto de apoyo y Forma de acceso.\\n- Entregar la actividad y el cuestionario en las 72h posteriores a la sesión.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 1: Evaluación\\, Selección de SAAC y Discapacidad Auditiva
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 1: Evaluación\\, Selección de SAAC y Discapacidad Auditiva
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:anat-act-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:📌 [Anatomía y Neurología] Actividad 1: Anatomía de los Pares Craneales y su relación con el Lenguaje (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Anatomía\\, Fisiología y Neurología del Lenguaje (Docente: Sara Prieto González)\\nTipo: Actividad 1 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-11-13\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\n\\nDescripción: Realizar una búsqueda y síntesis de información sobre la anatomía de los 12 pares craneales y su relación con las funciones del lenguaje\\, el habla\\, la voz\\, la audición y la deglución.\\n\\nChecklist de subtareas:\\n- Clasificar los 12 pares craneales según su modalidad (sensitivos/sensoriales\\, motores y mixtos) y origen en el tronco encefálico.\\n- Detallar especialmente los pares implicados en el habla\\, voz\\, audición y deglución (V Trigémino\\, VII Facial\\, VIII Vestibulococlear\\, IX Glosofaríngeo\\, X Vago\\, XI Accesorio y XII Hipogloso) y en la lectura (II Óptico\\, III\\, IV\\, VI).\\n- Incluir qué patologías del habla/lenguaje aparecen si se lesiona cada par (ej. disartria flácida\\, parálisis facial/disglosia labial\\, parálisis recurrencial/disfonía\\, hipoacusia neurosensorial\\, disfagia).\\n- Revisar formato y referencias APA 7ª ed. y entregar antes del 13 de noviembre de 2026 (100% nota).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 1: Anatomía de los Pares Craneales y su relación con el Lenguaje
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 1: Anatomía de los Pares Craneales y su relación con el Lenguaje
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:psico-act-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:📌 [Psicopatología AL] Actividad 1: Perfiles NEAE y Trastornos del Lenguaje Oral y del Aprendizaje (Unidad 3) (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Psicopatología de la Audición y el Lenguaje (Docente: Rocío Daniela Concha Ortiz)\\nTipo: Actividad 1 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-11-13\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 3\\n\\nDescripción: Actividad individual vinculada a la Unidad 3: reconocer tipos y perfiles de alumnos con NEAE (trastornos del lenguaje oral y del aprendizaje)\\, emplear terminología específica e incorporar exposición oral/TIC.\\n\\nChecklist de subtareas:\\n- Revisar en el Campus Virtual el enunciado específico de la Actividad 1 de Psicopatología (Unidad 3).\\n- Diferenciar con precisión TDL vs TL vs ITL según el Consenso Delphi 2026 (Andreu et al.\\, 2026) y los trastornos del aprendizaje (Dislexia\\, Disortografía\\, Discalculia\\, Disgrafía).\\n- Preparar el soporte digital / TIC o grabación oral solicitada cuidando la precisión terminológica.\\n- Entregar antes del 13 de noviembre de 2026 a las 23:59h (100% nota).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 1: Perfiles NEAE y Trastornos del Lenguaje Oral y del Aprendizaje (Unidad 3)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 1: Perfiles NEAE y Trastornos del Lenguaje Oral y del Aprendizaje (Unidad 3)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:oral-act-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:📌 [Trastornos Lenguaje Oral] Actividad 1: Detección Escolar\\, Clasificación de Alteraciones del Habla/Voz y Propuesta Preventiva (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos del Lenguaje Oral (Docente: Soraya Rodríguez Hernández)\\nTipo: Actividad 1 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-11-13\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\n\\nDescripción: Reconocer las etapas de adquisición del lenguaje oral\\, detectar dificultades en el contexto escolar\\, clasificar el tipo de alteración del habla o voz y diseñar una propuesta de intervención preventiva e inclusiva.\\n\\nChecklist de subtareas:\\n- Revisar el caso práctico de la Actividad 1 en el aula virtual de Lenguaje Oral.\\n- Situar al alumno en su etapa evolutiva del lenguaje (Prelingüística 0-12m vs Lingüística: holofrástica 12-18m\\, telegráfica 18-24m\\, o 3-5 años).\\n- Clasificar la alteración según Susanibar et al. (2016): Primaria (RSH o TSH fonético/fonológico/mixto) o Secundaria (Disartria\\, Disglosia\\, Disfonía).\\n- Diseñar una propuesta de intervención preventiva e inclusiva (DUA\\, LOMLOE Art. 20\\, 73\\, 74\\, 75) con objetivos\\, actividades y evaluación\\, y entregar antes del 13 de noviembre.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 1: Detección Escolar\\, Clasificación de Alteraciones del Habla/Voz y Propuesta Preventiva
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 1: Detección Escolar\\, Clasificación de Alteraciones del Habla/Voz y Propuesta Preventiva
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:saac-act-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261113
-DTEND;VALUE=DATE:20261114
-SUMMARY:📌 [SAAC y TIC] Actividad 1: Evaluación Ecológica y Diseño de SAAC en Discapacidad Auditiva (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (Docente: Equipo Docente AL (Calendario estándar UCJC))\\nTipo: Actividad 1 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-11-13\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\n\\nDescripción: Trabajo individual sobre evaluación y selección de SAAC (Unidad 1) y aplicación de sistemas oralistas/gestuales y ayudas técnicas en discapacidad auditiva (Unidad 2). (Fecha estándar UCJC - editable).\\n\\nChecklist de subtareas:\\n- Confirmar el enunciado exacto de la Actividad 1 en el campus virtual de SAAC.\\n- Desarrollar la evaluación mediante el enfoque ecológico (Tamarit\\, 1989) y el Test ComFor (Noens et al.\\, 2006).\\n- Justificar la elección entre sistemas oralistas (Método auditivo puro\\, Lectura Labiofacial\\, Palabra Complementada - LPC) y gestuales (Dactilología\\, Comunicación Bimodal\\, Lengua de Signos - LSE).\\n- Entregar en la fecha recomendada (13 nov estándar UCJC).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 1: Evaluación Ecológica y Diseño de SAAC en Discapacidad Auditiva
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 1: Evaluación Ecológica y Diseño de SAAC en Discapacidad Auditiva
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:escr-act-1-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261127
-SUMMARY:📌 [Trastornos Lengua Escrita] Actividad 1: Caso Práctico Vida Real - Lectura con Dificultades Fonológicas (Simulacro 1) (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos de la Lengua Escrita (Docente: David Sánchez Toribio)\\nTipo: Actividad 1 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-11-26\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\n\\nDescripción: Caso práctico de la vida real (simulacro uno): saber diferenciar y analizar un caso de lectura con dificultades fonológicas apoyándose en los Temas 1 y 2 (y complementos PDF de la actividad 1).\\n\\nChecklist de subtareas:\\n- Leer detenidamente el PDF complementario de la Actividad 1 en el campus virtual de Lengua Escrita.\\n- Analizar los procesos de bajo nivel (decodificación\\, movimientos sacádicos/regresiones\\, vía subléxica vs léxica) y procesos superiores (sintáctico y semántico).\\n- Explicar los efectos de lexicalidad\\, frecuencia y longitud observados en el caso.\\n- Entregar antes del 26 de noviembre de 2026 (fecha de máxima nota 100%).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 1: Caso Práctico Vida Real - Lectura con Dificultades Fonológicas (Simulacro 1)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 1: Caso Práctico Vida Real - Lectura con Dificultades Fonológicas (Simulacro 1)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:psico-taller-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:📌 [Psicopatología AL] Sesión Práctica 2: Elaboración de una Infografía sobre NEAE y NEE (LOMLOE) (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Psicopatología de la Audición y el Lenguaje (Docente: Rocío Daniela Concha Ortiz)\\nTipo: Taller Práctico 2 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-12-04\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 4\\, Unidad 5\\n\\nDescripción: Elaborar una infografía para sensibilizar a un centro educativo sobre casos de NEE (Unidad 4) y NEAE (Unidad 5) considerando la LOMLOE + cuestionario.\\n\\nChecklist de subtareas:\\n- Asistir o visualizar la 7ª sesión síncrona de Psicopatología.\\n- Estructurar visualmente la diferencia entre el grupo paraguas NEAE (Art. 71 LOMLOE) y el subgrupo NEE (Art. 73 LOMLOE).\\n- Incluir los perfiles de la Unidad 4 (DI\\, Discapacidad física\\, Discapacidad auditiva\\, TEA\\, TGC) y Unidad 5 (Retraso madurativo\\, ACI\\, TDAH\\, Incorporación tardía\\, Condiciones personales/historia escolar).\\n- Entregar la infografía y completar el cuestionario antes del 4 de diciembre de 2026 (72h tras la sesión).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 2: Elaboración de una Infografía sobre NEAE y NEE (LOMLOE)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 2: Elaboración de una Infografía sobre NEAE y NEE (LOMLOE)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:anat-taller-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:📌 [Anatomía y Neurología] Sesión Práctica 2: Componentes del Lenguaje y Detección de Dificultades (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Anatomía\\, Fisiología y Neurología del Lenguaje (Docente: Sara Prieto González)\\nTipo: Taller Práctico 2 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-12-04\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Actividad práctica sobre los componentes del lenguaje (fonemas\\, morfemas\\, sintaxis\\, semántica\\, discurso) y procesos de percepción\\, comprensión y producción\\, explicando con evidencia científica los trastornos del lenguaje y su causa.\\n\\nChecklist de subtareas:\\n- Repasar las Unidades 4 y 5 de Anatomía (Tabla 2 de González y Hornauer-Hughes\\, 2014\\; modelos de Forster y Morton\\; fases de producción de Carroll\\, 2021).\\n- Realizar la práctica de la 7ª sesión síncrona y el cuestionario.\\n- Entregar antes del 4 de diciembre de 2026 (72h tras la sesión).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 2: Componentes del Lenguaje y Detección de Dificultades
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 2: Componentes del Lenguaje y Detección de Dificultades
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:oral-taller-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:📌 [Trastornos Lenguaje Oral] Sesión Práctica 2: Análisis de Testimonio Real sobre Disfemia (Fluidez Verbal) (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos del Lenguaje Oral (Docente: Soraya Rodríguez Hernández)\\nTipo: Taller Práctico 2 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-12-04\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 4\\n\\nDescripción: Análisis crítico de un testimonio real sobre disfemia/tartamudez: características emocionales\\, sociales y comunicativas\\, impacto de la autoimagen y estrategias docentes inclusivas.\\n\\nChecklist de subtareas:\\n- Visualizar la 7ª sesión síncrona y el testimonio real propuesto por la profesora Soraya Rodríguez.\\n- Analizar la metáfora del 'Iceberg de la Disfemia' (parte visible: bloqueos\\, repeticiones\\, prolongaciones vs parte sumergida: vergüenza\\, ansiedad anticipatoria\\, evitación\\, baja autoestima).\\n- Redactar las estrategias para el aula y la familia y entregar junto con el cuestionario en 72h (semana 30 nov - 4 dic).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 2: Análisis de Testimonio Real sobre Disfemia (Fluidez Verbal)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 2: Análisis de Testimonio Real sobre Disfemia (Fluidez Verbal)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:escr-taller-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:📌 [Trastornos Lengua Escrita] Sesión Práctica 2: Evaluación de Lectura y Aritmética en un mismo Paciente (Discalculia) (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos de la Lengua Escrita (Docente: David Sánchez Toribio)\\nTipo: Taller Práctico 2 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-12-04\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Describir y evaluar el tipo de lectura de palabras y la aritmética de un mismo paciente\\, debiendo descubrir y justificar si presenta o no discalculia (y su posible comorbilidad con dislexia).\\n\\nChecklist de subtareas:\\n- Repasar la Unidad 5 de Lengua Escrita (especialmente epígrafes 4\\, 5\\, 7 'Relación entre dislexia y discalculia' y 9 'Evaluación').\\n- Analizar en el caso si los fallos matemáticos se deben a un déficit genuino en el sentido numérico/procesamiento aritmético (Discalculia) o son secundarios a una mala lectura/comprensión del enunciado verbal o a errores de escritura de cifras.\\n- Entregar la actividad y el cuestionario antes del 4 de diciembre de 2026.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 2: Evaluación de Lectura y Aritmética en un mismo Paciente (Discalculia)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 2: Evaluación de Lectura y Aritmética en un mismo Paciente (Discalculia)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:saac-taller-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261204
-DTEND;VALUE=DATE:20261205
-SUMMARY:📌 [SAAC y TIC] Sesión Práctica 2: Diseño de Adaptación Curricular y Matriz de Decisión SAAC (0.5 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (Docente: Equipo Docente AL (Calendario estándar UCJC))\\nTipo: Taller Práctico 2 — Peso: 0.5 puntos (5% de la nota final)\\nFecha recomendada (100% nota): 2026-12-04\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Actividad práctica sobre selección de SAAC en TEA / Discapacidad Física y diseño de adaptaciones curriculares e implementación mediante Lenguaje Natural Asistido (Fecha estándar UCJC - editable).\\n\\nChecklist de subtareas:\\n- Revisar la fecha y enunciado del Taller 2 en el aula virtual de SAAC.\\n- Completar la matriz de toma de decisiones y las pautas de enseñanza (modelado / LNA\\, moldeamiento\\, encadenamiento hacia atrás\\, espera estructurada).\\n- Entregar antes del 4 de diciembre de 2026.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Sesión Práctica 2: Diseño de Adaptación Curricular y Matriz de Decisión SAAC
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Sesión Práctica 2: Diseño de Adaptación Curricular y Matriz de Decisión SAAC
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:escr-act-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
-SUMMARY:📌 [Trastornos Lengua Escrita] Actividad 2: Análisis de Casos Reales de Fallos en Escritura (Disgrafía y Disortografía) (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos de la Lengua Escrita (Docente: David Sánchez Toribio)\\nTipo: Actividad 2 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-12-03\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\n\\nDescripción: Analizar casos reales de fallos en escritura (Temas 1\\, 2\\, 3 y 4)\\, diferenciando los procesos cognitivos de la escritura afectados\\, tipología de disgrafía y/o disortografía y diseñando la intervención.\\n\\nChecklist de subtareas:\\n- Descargar las muestras reales de escritura de la Actividad 2 en el aula virtual de Lengua Escrita.\\n- Analizar los errores en los 4 procesos del modelo de Cuetos (2009): Planificación\\, Construcción sintáctica\\, Recuperación léxica (vía subléxica/fonológica vs vía léxica/ortográfica) y Procesos motores (alógrafos y patrones motores).\\n- Clasificar si se trata de Disgrafía (motriz/caligráfica vs central/lingüística) y/o Disortografía (temporal\\, perceptivo-kinestésica\\, disortocinética\\, visoespacial\\, dinámica o semántica - Otondo y Bascur\\, 2020).\\n- Entregar antes del 3 de diciembre de 2026 (fecha recomendada 100%).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 2: Análisis de Casos Reales de Fallos en Escritura (Disgrafía y Disortografía)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 2: Análisis de Casos Reales de Fallos en Escritura (Disgrafía y Disortografía)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:anat-act-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:📌 [Anatomía y Neurología] Actividad 2: Caso Ficticio de Patología Neurológica o Anatómica del Lenguaje (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Anatomía\\, Fisiología y Neurología del Lenguaje (Docente: Sara Prieto González)\\nTipo: Actividad 2 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-12-11\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Realizar un caso ficticio de una persona con patología derivada de daño neurológico o anatómico relacionado con el lenguaje\\, habla\\, voz\\, audición y deglución.\\n\\nChecklist de subtareas:\\n- Diseñar el perfil del paciente ficticio (edad\\, antecedentes\\, etiología de la lesión neurológica/anatómica).\\n- Localizar con precisión anatómica la lesión (ej. ACV/TCE en área de Broca o Wernicke + afectación de pares craneales o tronco encefálico/cerebelo).\\n- Describir cómo la lesión afecta a las funciones de lenguaje (comprensión/producción)\\, habla (articulación/disartria)\\, voz (fonación/disfonía)\\, audición y deglución (disfagia).\\n- Entregar antes del 11 de diciembre de 2026 (fecha recomendada 100%).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 2: Caso Ficticio de Patología Neurológica o Anatómica del Lenguaje
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 2: Caso Ficticio de Patología Neurológica o Anatómica del Lenguaje
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:psico-act-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:📌 [Psicopatología AL] Actividad 2: Representación Gráfica y Síntesis de un Artículo Científico (Unidad 5) (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Psicopatología de la Audición y el Lenguaje (Docente: Rocío Daniela Concha Ortiz)\\nTipo: Actividad 2 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-12-11\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 5\\n\\nDescripción: Representar gráficamente la comprensión de uno de los artículos científicos propuestos en la Unidad 5\\, simplificando sus partes (antecedentes\\, metodología\\, objetivos\\, resultados\\, discusión\\, conclusión y referencias).\\n\\nChecklist de subtareas:\\n- Seleccionar uno de los artículos científicos propuestos por la profesora en la carpeta de la Actividad 2 (Campus Virtual).\\n- Extraer las 7 secciones obligatorias de la rúbrica: (1) Antecedentes/Marco teórico\\, (2) Objetivos/Hipótesis\\, (3) Metodología (muestra\\, instrumentos\\, procedimiento)\\, (4) Resultados principales\\, (5) Discusión\\, (6) Conclusiones e implicaciones para AL y (7) Referencias bibliográficas en APA 7ª ed.\\n- Diseñar el resumen visual / póster científico / mapa gráfico y entregarlo antes del 11 de diciembre de 2026 a las 23:59h.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 2: Representación Gráfica y Síntesis de un Artículo Científico (Unidad 5)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 2: Representación Gráfica y Síntesis de un Artículo Científico (Unidad 5)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:oral-act-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:📌 [Trastornos Lenguaje Oral] Actividad 2: Análisis de Dificultades Lingüísticas por Niveles y Tabla Estructurada (Unidad 5) (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos del Lenguaje Oral (Docente: Soraya Rodríguez Hernández)\\nTipo: Actividad 2 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-12-11\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 5\\n\\nDescripción: Analizar las dificultades lingüísticas de un caso en los distintos niveles del lenguaje (fonológico\\, morfosintáctico\\, semántico y pragmático)\\, identificar las bases funcionales implicadas\\, justificar la alteración del desarrollo del lenguaje y sintetizar la información en una tabla estructurada.\\n\\nChecklist de subtareas:\\n- Leer el caso clínico de la Actividad 2 en el aula virtual de Lenguaje Oral.\\n- Completar la Tabla Estructurada de Análisis en los 4 niveles del lenguaje (Fonológico\\, Morfosintáctico\\, Léxico-Semántico y Pragmático) + Bases Funcionales (audición\\, órganos bucofonatorios\\, memoria fonológica a corto plazo\\, atención y funciones ejecutivas).\\n- Justificar el diagnóstico (ej. Retraso Simple del Lenguaje RSL vs Trastorno del Desarrollo del Lenguaje TDL vs Mutismo Selectivo vs Afasia Infantil Adquirida) y las líneas de intervención.\\n- Entregar antes del 11 de diciembre de 2026 (fecha recomendada 100%).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 2: Análisis de Dificultades Lingüísticas por Niveles y Tabla Estructurada (Unidad 5)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 2: Análisis de Dificultades Lingüísticas por Niveles y Tabla Estructurada (Unidad 5)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:saac-act-2-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20261211
-DTEND;VALUE=DATE:20261212
-SUMMARY:📌 [SAAC y TIC] Actividad 2: Implementación de SAAC en TEA y Discapacidad Física (Unidades 3 y 4) (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (Docente: Equipo Docente AL (Calendario estándar UCJC))\\nTipo: Actividad 2 — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2026-12-11\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 3\\, Unidad 4\\n\\nDescripción: Trabajo individual sobre el diseño y aplicación de SAAC en alumnado con TEA (PECS\\, Habla Signada de Schaeffer\\, SPC) y alumnado con discapacidad física/motora (Bliss\\, Minspeak\\, Rebus\\, ARASAAC y productos de acceso). (Fecha estándar UCJC - editable).\\n\\nChecklist de subtareas:\\n- Revisar el enunciado de la Actividad 2 en el aula virtual de SAAC.\\n- Desarrollar la secuencia de implementación en TEA (prelación de objetivos y las 6 fases de PECS o las fases de Schaeffer).\\n- Desarrollar la selección de SAAC y productos de apoyo para el acceso en discapacidad motora (Unidad 4).\\n- Entregar antes del 11 de diciembre de 2026.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Actividad 2: Implementación de SAAC en TEA y Discapacidad Física (Unidades 3 y 4)
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Actividad 2: Implementación de SAAC en TEA y Discapacidad Física (Unidades 3 y 4)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:escr-portfolio-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
-SUMMARY:📌 [Trastornos Lengua Escrita] Portfolio Final: Reflexión y Recorrido por Trastornos de la Lengua Escrita (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos de la Lengua Escrita (Docente: David Sánchez Toribio)\\nTipo: Portfolio Final — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2027-01-03\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Realización y entrega individual del portfolio final relacionando las sesiones de clase\\, los contenidos de los Temas 1 a 5 y las actividades prácticas\\, incluyendo autoevaluación y reflexión final.\\n\\nChecklist de subtareas:\\n- Haber completado las Actividades 1 y 2 y los Talleres 1 y 2\\, y haber visualizado las 8 sesiones síncronas.\\n- Redactar la síntesis integradora de las 5 unidades (Perspectiva multifocal\\, Sistema de lectura y escritura\\, Dislexia\\, Disgrafía/Disortografía y Discalculia).\\n- Vincular los aprendizajes teóricos con los casos prácticos resueltos durante el cuatrimestre.\\n- Incluir el apartado de Autoevaluación y Reflexión Final y entregar antes del 3 de enero de 2027 (100% nota).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Portfolio Final: Reflexión y Recorrido por Trastornos de la Lengua Escrita
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Portfolio Final: Reflexión y Recorrido por Trastornos de la Lengua Escrita
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:psico-portfolio-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270108
-DTEND;VALUE=DATE:20270109
-SUMMARY:📌 [Psicopatología AL] Portfolio Final: Síntesis Individual de Psicopatología de la Audición y el Lenguaje (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Psicopatología de la Audición y el Lenguaje (Docente: Rocío Daniela Concha Ortiz)\\nTipo: Portfolio Final — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2027-01-08\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Resumir todo lo visto y trabajado en las Unidades 1 a 5 de la asignatura\\, incluyendo reflexión crítica y síntesis de la experiencia individual de estudio.\\n\\nChecklist de subtareas:\\n- Haber entregado previamente las Actividades 1 y 2 y los Talleres 1 y 2.\\n- Sintetizar las ideas fuerza de las Unidades 1\\, 2\\, 3\\, 4 y 5.\\n- Reflexionar sobre la complementariedad entre el modelo médico y el modelo educativo/conductual bajo el paraguas inclusivo de la LOMLOE.\\n- Entregar antes del 8 de enero de 2027 a las 23:59h (100% nota).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Portfolio Final: Síntesis Individual de Psicopatología de la Audición y el Lenguaje
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Portfolio Final: Síntesis Individual de Psicopatología de la Audición y el Lenguaje
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:anat-portfolio-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270112
-DTEND;VALUE=DATE:20270113
-SUMMARY:📌 [Anatomía y Neurología] Portfolio Final: Resumen Global y Reflexión en Anatomía\\, Fisiología y Neurología del Lenguaje (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Anatomía\\, Fisiología y Neurología del Lenguaje (Docente: Sara Prieto González)\\nTipo: Portfolio Final — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2027-01-12\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Trabajo final o presentación resumen de todo lo trabajado en la asignatura\\, analizando los contenidos y actividades realizadas de manera individual e incluyendo autoevaluación y reflexión (Fecha recomendada: entre el 15 dic y 15 ene).\\n\\nChecklist de subtareas:\\n- Recopilar y revisar los aprendizajes de las Unidades 1 a 5 y de las Actividades 1 y 2 y Talleres 1 y 2.\\n- Elaborar el documento o presentación resumen conectando SNC\\, SNP/Receptores\\, Sistema Fonoarticulatorio\\, Dimensiones/Componentes del Lenguaje y Procesos de Percepción/Comprensión/Producción.\\n- Incluir el apartado de autoevaluación y entregar dentro de la ventana recomendada (15 diciembre 2026 – 15 enero 2027).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Portfolio Final: Resumen Global y Reflexión en Anatomía\\, Fisiología y Neurología del Lenguaje
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Portfolio Final: Resumen Global y Reflexión en Anatomía\\, Fisiología y Neurología del Lenguaje
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:oral-portfolio-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270114
-DTEND;VALUE=DATE:20270115
-SUMMARY:📌 [Trastornos Lenguaje Oral] Portfolio Final: Portfolio Digital/Audiovisual\\, Autoevaluación y Heteroevaluación (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos del Lenguaje Oral (Docente: Soraya Rodríguez Hernández)\\nTipo: Portfolio Final — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2027-01-14\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Elaboración y exposición de un portfolio digital/audiovisual estructurado que sintetice los aprendizajes de las 5 unidades\\, los relacione con los talleres y actividades prácticas e incluya autoevaluación y heteroevaluación de la asignatura (Ventana recomendada: 15 dic – 15 ene).\\n\\nChecklist de subtareas:\\n- Haber realizado los Talleres 1 y 2 y las Actividades 1 y 2 y visualizado las sesiones síncronas.\\n- Estructurar el soporte digital y el guion audiovisual cubriendo las 5 unidades (Prevención y desarrollo oral\\, RSH y TSH\\, Disartria/Disglosia/Disfonía\\, Disfemia\\, y RSL/TDL/Mutismo/Afasia).\\n- Incluir el bloque obligatorio de Autoevaluación del aprendizaje y Heteroevaluación de la asignatura.\\n- Entregar entre el 15 de diciembre de 2026 y el 15 de enero de 2027 (100% nota).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Portfolio Final: Portfolio Digital/Audiovisual\\, Autoevaluación y Heteroevaluación
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Portfolio Final: Portfolio Digital/Audiovisual\\, Autoevaluación y Heteroevaluación
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:saac-portfolio-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270115
-DTEND;VALUE=DATE:20270116
-SUMMARY:📌 [SAAC y TIC] Portfolio Final: Síntesis Global y Reflexión en SAAC y TIC (1 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (Docente: Equipo Docente AL (Calendario estándar UCJC))\\nTipo: Portfolio Final — Peso: 1 puntos (10% de la nota final)\\nFecha recomendada (100% nota): 2027-01-15\\nFecha límite evaluación continua (95% nota): 2027-01-21\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Portfolio final integrador de las 5 unidades de Sistemas Aumentativos y Alternativos de la Comunicación y las TIC\\, relacionando los casos prácticos\\, el catálogo de recursos tecnológicos y la reflexión personal (Fecha estándar UCJC - editable).\\n\\nChecklist de subtareas:\\n- Confirmar la fecha recomendada del Portfolio Final en el aula virtual de SAAC.\\n- Integrar el resumen de las 5 unidades (Introducción y ComFor\\, Discapacidad Auditiva\\, TEA\\, Discapacidad Física\\, Adaptaciones Curriculares y LNA).\\n- Incluir un catálogo propio de herramientas TIC y SAAC (ARASAAC\\, Araword\\, Soy Visual\\, LetMeTalk\\, Asterics Grid\\, Grid 3\\, SEDEA\\, DI) y la reflexión final.\\n- Entregar antes del 15 de enero de 2027 (y siempre antes de la fecha límite final del 21 de enero de 2027).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Portfolio Final: Síntesis Global y Reflexión en SAAC y TIC
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Portfolio Final: Síntesis Global y Reflexión en SAAC y TIC
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:examen-psico-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270205
-DTEND;VALUE=DATE:20270206
-SUMMARY:📌 [Psicopatología AL] Examen Final Ordinario: Psicopatología de la Audición y el Lenguaje (6 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Psicopatología de la Audición y el Lenguaje (Docente: Rocío Daniela Concha Ortiz)\\nTipo: Examen Oficial — Peso: 6 puntos (60% de la nota final)\\nFecha recomendada (100% nota): 2027-02-05\\nFecha límite evaluación continua (95% nota): 2027-02-06\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Examen final tipo test en modalidad online síncrona a través de Blackboard con sistema Proctoring. Asistencia obligatoria para aprobar y sumar la evaluación continua.\\n\\nChecklist de subtareas:\\n- Completar los test de autoevaluación de las 5 unidades en el campus virtual.\\n- Practicar con el Simulador de Examen Tipo Test y las Flashcards de esta aplicación.\\n- Verificar requisitos técnicos del sistema Proctoring en Blackboard y horario oficial del grupo.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Examen Final Ordinario: Psicopatología de la Audición y el Lenguaje
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Examen Final Ordinario: Psicopatología de la Audición y el Lenguaje
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:examen-anat-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270205
-DTEND;VALUE=DATE:20270206
-SUMMARY:📌 [Anatomía y Neurología] Examen Final Ordinario: Anatomía\\, Fisiología y Neurología del Lenguaje (6 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Anatomía\\, Fisiología y Neurología del Lenguaje (Docente: Sara Prieto González)\\nTipo: Examen Oficial — Peso: 6 puntos (60% de la nota final)\\nFecha recomendada (100% nota): 2027-02-05\\nFecha límite evaluación continua (95% nota): 2027-02-06\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Examen final tipo test en modalidad online síncrona a través de Blackboard con sistema Proctoring (60% de la nota final).\\n\\nChecklist de subtareas:\\n- Repasar lóbulos cerebrales\\, cerebelo\\, tronco del encéfalo\\, partes del oído\\, cartílagos laríngeos\\, efecto Bernoulli\\, áreas de Broca/Wernicke y modelos de percepción/producción.\\n- Realizar simulacros en el Simulador de Examen de esta app.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Examen Final Ordinario: Anatomía\\, Fisiología y Neurología del Lenguaje
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Examen Final Ordinario: Anatomía\\, Fisiología y Neurología del Lenguaje
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:examen-oral-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270205
-DTEND;VALUE=DATE:20270206
-SUMMARY:📌 [Trastornos Lenguaje Oral] Examen Final Ordinario: Evaluación e Intervención en Trastornos del Lenguaje Oral (6 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos del Lenguaje Oral (Docente: Soraya Rodríguez Hernández)\\nTipo: Examen Oficial — Peso: 6 puntos (60% de la nota final)\\nFecha recomendada (100% nota): 2027-02-05\\nFecha límite evaluación continua (95% nota): 2027-02-06\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Examen final tipo test online síncrono en Blackboard con Proctoring (60% de la nota final).\\n\\nChecklist de subtareas:\\n- Repasar hitos evolutivos\\, clasificación de Susanibar et al. (2016)\\, pruebas de evaluación (PEFF\\, RFI\\, PLON-R\\, OMES-E\\, PEMO\\, PRET-I/PRET-A\\, ITPA\\, BLOC\\, Boston) y pautas de intervención.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Examen Final Ordinario: Evaluación e Intervención en Trastornos del Lenguaje Oral
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Examen Final Ordinario: Evaluación e Intervención en Trastornos del Lenguaje Oral
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:examen-escr-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270205
-DTEND;VALUE=DATE:20270206
-SUMMARY:📌 [Trastornos Lengua Escrita] Examen Final Ordinario: Evaluación e Intervención en Trastornos de la Lengua Escrita (6 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Evaluación e Intervención en los Trastornos de la Lengua Escrita (Docente: David Sánchez Toribio)\\nTipo: Examen Oficial — Peso: 6 puntos (60% de la nota final)\\nFecha recomendada (100% nota): 2027-02-05\\nFecha límite evaluación continua (95% nota): 2027-02-06\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Examen final tipo test online síncrono en Blackboard con Proctoring (60% de la nota final).\\n\\nChecklist de subtareas:\\n- Asistir o visualizar la 8ª sesión síncrona (Simulacro de preguntas tipo examen con el profesor David Sánchez Toribio).\\n- Repasar los modelos de lectura (Coltheart\\; Seidenberg y McClelland) y escritura (Hayes y Flower\\; Cuetos\\; Bereiter y Scardamalia) y las pruebas (PROLEC-R\\, PROESC\\, DST-J\\, TALE\\, EDIL\\, BENHALE\\, Frostig\\, Stamback).
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Examen Final Ordinario: Evaluación e Intervención en Trastornos de la Lengua Escrita
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Examen Final Ordinario: Evaluación e Intervención en Trastornos de la Lengua Escrita
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:examen-saac-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270205
-DTEND;VALUE=DATE:20270206
-SUMMARY:📌 [SAAC y TIC] Examen Final Ordinario: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (6 pts)
-DESCRIPTION:Cuenta destino: herrizpab@gmail.com\\nAsignatura: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC (Docente: Equipo Docente AL (Calendario estándar UCJC))\\nTipo: Examen Oficial — Peso: 6 puntos (60% de la nota final)\\nFecha recomendada (100% nota): 2027-02-05\\nFecha límite evaluación continua (95% nota): 2027-02-06\\nUnidades relacionadas: Unidad 1\\, Unidad 2\\, Unidad 3\\, Unidad 4\\, Unidad 5\\n\\nDescripción: Examen final tipo test online síncrono en Blackboard con Proctoring (60% de la nota final).\\n\\nChecklist de subtareas:\\n- Repasar el Test ComFor\\, diferencias entre LPC\\, Bimodal y LSE\\, las 6 fases de PECS\\, el programa de Benson Schaeffer\\, los colores de SPC/Bliss\\, Minspeak\\, ARASAAC y el Lenguaje Natural Asistido.
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 3 días para entregar: Examen Final Ordinario: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Mañana vence fecha recomendada (100%): Examen Final Ordinario: Sistemas Aumentativos y Alternativos de la Comunicación y las TIC
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:hito-limite-continua-20270121-herrizpab@ucjc-mencion-al
-DTSTAMP:20261018T090000Z
-DTSTART;VALUE=DATE:20270121
-DTEND;VALUE=DATE:20270122
-SUMMARY:🚨 FECHA LÍMITE FINAL EVALUACIÓN CONTINUA UCJC (Sobre 95%)
-DESCRIPTION:Último día para entregar Actividades 1 y 2, Talleres 1 y 2 y Portfolios de todas las asignaturas de la Mención en Audición y Lenguaje calificados sobre el 95%.
-BEGIN:VALARM
-TRIGGER:-P5D
-ACTION:DISPLAY
-DESCRIPTION:Faltan 5 días para el cierre definitivo de evaluación continua UCJC
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mencion AL UCJC//Calendario Oficial herrizpab//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mencion AL UCJC 2026-27 (Pablo Herrero)
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:psico-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Psicopatologia AL: Taller Practico 1 (Caso Real)
+DESCRIPTION:Entrega caso Lucia, Alvaro o Mario (max 2 pag PDF)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Anatomia: Taller Practico 1 (Caso Daniel)
+DESCRIPTION:Adaptaciones de aula para Daniel (5 anos, implante coclear)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Trastornos Oral: Taller Practico 1 (TEA Sensorial)
+DESCRIPTION:Casos Martin, Ismael y Alicia con Elena Perez Gutierrez
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:Trastornos Escrita: Taller Practico 1 (Video Nino 8-9 anos)
+DESCRIPTION:Analisis de lectura de palabras y recomendaciones familiares
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-taller-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261106T235900
+DTEND:20261106T235900
+SUMMARY:SAAC y TIC: Taller Practico 1 (Caso Alex)
+DESCRIPTION:Ficha de analisis critico (1 pag PDF) + cuestionario
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:Anatomia: Actividad 1 (Mapa Conceptual Pares Craneales)
+DESCRIPTION:Mapa conceptual pares craneales y su relacion con el lenguaje (2-3 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:Psicopatologia AL: Actividad 1 (Video 60s Unidad 3)
+DESCRIPTION:Video informativo max 60 segundos + cita verbal y subtitulos
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:Trastornos Oral: Actividad 1 (Caso Marco)
+DESCRIPTION:Caso Marco (5a 8m) y propuesta preventiva de aula (2-3 pag)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261113T235900
+DTEND:20261113T235900
+SUMMARY:SAAC y TIC: Actividad 1 (Caso Sara 8 anos)
+DESCRIPTION:Caso Sara (55 dB, FM, Bimodal) actividad de 10 min (2-4 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-act-1@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261126T235900
+DTEND:20261126T235900
+SUMMARY:Trastornos Escrita: Actividad 1 (Caso Nino 8 anos)
+DESCRIPTION:Analisis de lectura en video nino 8 anos (max 2 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Psicopatologia AL: Taller Practico 2 (Aula de Acogida)
+DESCRIPTION:Diseno Aula de Acogida con plano y 8 apartados (max 3 pag)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Anatomia: Taller Practico 2 (Caso Marta)
+DESCRIPTION:Caso Marta (58 anos, afasia de Broca, 4 preguntas con evidencia)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Trastornos Oral: Taller Practico 2 (Disfemia)
+DESCRIPTION:Analisis de testimonio real sobre disfemia y estrategias en el aula
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:Trastornos Escrita: Taller Practico 2 (Videos Paciente TCE)
+DESCRIPTION:Analisis de numeros y lectura en paciente con TCE (max 1,5 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-taller-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261204T235900
+DTEND:20261204T235900
+SUMMARY:SAAC y TIC: Taller Practico 2 (Aula Accesible DUA)
+DESCRIPTION:Ficha diseno aula accesible DUA (1 pag con boceto) + cuestionario
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261203T235900
+DTEND:20261203T235900
+SUMMARY:Trastornos Escrita: Actividad 2 (Analisis 2 Muestras)
+DESCRIPTION:Analisis de 6 fallos en las 2 imagenes de escritura libre (2-3 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261211T235900
+DTEND:20261211T235900
+SUMMARY:Anatomia: Actividad 2 (Caso Clinico Ficticio)
+DESCRIPTION:Caso clinico ficticio de dano neurologico/anatomico (2-3 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261211T235900
+DTEND:20261211T235900
+SUMMARY:Psicopatologia AL: Actividad 2 (Poster Cientifico)
+DESCRIPTION:Poster de congreso (1 cara) + justificacion (1 cara) de 1 articulo
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20261211T235900
+DTEND:20261211T235900
+SUMMARY:Trastornos Oral: Actividad 2 (Caso Laura - Tabla pag 3)
+DESCRIPTION:Completar SOLO la tabla de pag 3 sobre el caso de Laura (fisura palatina)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-act-2@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270121T235900
+DTEND:20270121T235900
+SUMMARY:SAAC y TIC: Actividad 2 (AsTeRICS Grid o SymboTalk)
+DESCRIPTION:Analisis critico de herramienta CAA para TEA (2-4 caras)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:escr-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270103T235900
+DTEND:20270103T235900
+SUMMARY:Trastornos Escrita: Portfolio Final (Canva 2 min)
+DESCRIPTION:Presentacion Canva grabada de 2 minutos (P1 aprendizajes, P2 evolucion)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:psico-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270115T235900
+DTEND:20270115T235900
+SUMMARY:Psicopatologia AL: Portfolio Final (Memoria 7 pag)
+DESCRIPTION:Memoria individual en Word/PDF de max 7 paginas (3 capitulos)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:anat-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270115T235900
+DTEND:20270115T235900
+SUMMARY:Anatomia: Portfolio Final (Memoria 2-3 pag)
+DESCRIPTION:Memoria en Word/PDF de 2-3 paginas con autoevaluacion
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:oral-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270115T235900
+DTEND:20270115T235900
+SUMMARY:Trastornos Oral: Portfolio Final (Canva con voz)
+DESCRIPTION:Canva (10-15 diapositivas) grabada con voz y heteroevaluacion
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:saac-portfolio@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270121T235900
+DTEND:20270121T235900
+SUMMARY:SAAC y TIC: Portfolio Final (Portafolio 6 apartados)
+DESCRIPTION:Portafolio en PDF (4-6 paginas o 6-10 diapositivas)
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:examen-general@ucjc.mencional.es
+DTSTAMP:20261025T204242Z
+DTSTART:20270205T090000
+DTEND:20270205T090000
+SUMMARY:EXAMENES FINALES ORDINARIOS (Todas las Asignaturas)
+DESCRIPTION:Examenes online tipo test en Blackboard con Proctoring
+LOCATION:Campus Virtual Blackboard UCJC
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

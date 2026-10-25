@@ -68,7 +68,9 @@
     quizSubject: "all",
     quizAnswers: {},                  // { [questionId]: selectedOptionIndex }
     flashcardSubject: "all",
-    flashcardIndex: 0
+    flashcardIndex: 0,
+    multimediaSubFilter: "all",
+    multimediaTypeFilter: "all"
   };
 
   // Configuración Neon Serverless HTTP SQL (Proyecto: mencion-al-ucjc / twilight-grass-67713262)
@@ -317,9 +319,7 @@
       text: title,
       dates: `${dStart}/${dEnd}`,
       details: details,
-      ctz: "Europe/Madrid",
-      authuser: GCAL_ACCOUNT,
-      src: GCAL_ACCOUNT
+      ctz: "Europe/Madrid"
     });
 
     return `https://calendar.google.com/calendar/render?${params.toString()}`;
@@ -365,6 +365,70 @@
     }
   }
 
+  // Reproductor de Vídeo integrado con <dialog closedby="any">
+  function openVideoModal(videoSrc, titleText, subtitleText) {
+    const dialog = document.getElementById("video-dialog");
+    const video = document.getElementById("class-video-player");
+    const titleEl = document.getElementById("video-title-text");
+    const subEl = document.getElementById("video-dialog-subtitle");
+    const infoEl = document.getElementById("video-file-info");
+
+    titleEl.textContent = titleText || "Vídeo de Clase Grabada";
+    subEl.textContent = subtitleText || videoSrc;
+    if (infoEl) infoEl.textContent = `Archivo: ${videoSrc.split('/').pop()}`;
+
+    video.src = encodeURI(videoSrc);
+    video.playbackRate = 1.0;
+
+    document.querySelectorAll(".btn-video-speed").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.speed === "1");
+    });
+
+    if (typeof dialog.showModal === "function") {
+      dialog.showModal();
+      video.play().catch(() => {});
+    }
+  }
+
+  // Visor de Rúbricas y Muestras de Imágenes integrado
+  function openImageModal(imgSrc, titleText, subtitleText) {
+    const dialog = document.getElementById("image-dialog");
+    const img = document.getElementById("image-preview");
+    const titleEl = document.getElementById("image-dialog-title");
+    const subEl = document.getElementById("image-dialog-subtitle");
+    const extLink = document.getElementById("image-external-link");
+
+    const encoded = encodeURI(imgSrc);
+    titleEl.textContent = titleText || "Muestra o Rúbrica Oficial";
+    subEl.textContent = subtitleText || imgSrc;
+    img.src = encoded;
+    if (extLink) extLink.href = encoded;
+
+    if (typeof dialog.showModal === "function") {
+      dialog.showModal();
+    } else {
+      window.open(encoded, "_blank");
+    }
+  }
+
+  // Despachador universal de medios
+  function openMedia(filePath, titleText, mediaType) {
+    const ext = (filePath.split('.').pop() || '').toLowerCase();
+    if (ext === 'mp4' || ext === 'mov' || mediaType === 'video') {
+      openVideoModal(filePath, titleText);
+    } else if (['jpg', 'jpeg', 'png', 'webp'].includes(ext) || mediaType === 'image') {
+      openImageModal(filePath, titleText);
+    } else if (ext === 'pdf' || mediaType === 'pdf') {
+      openPdfModal(filePath, titleText);
+    } else {
+      const link = document.createElement('a');
+      link.href = encodeURI(filePath);
+      link.download = filePath.split('/').pop();
+      link.target = '_blank';
+      link.click();
+    }
+  }
+
   function openGCalModal() {
     const dialog = document.getElementById("gcal-dialog");
     const listEl = document.getElementById("gcal-modal-events-list");
@@ -394,7 +458,7 @@
               class="btn btn-gcal btn-sm"
               style="flex-shrink:0;"
             >
-              + Añadir a ${GCAL_ACCOUNT} ↗
+              + Añadir a Google Calendar ↗
             </a>
           </div>
         `;
@@ -475,6 +539,9 @@
   // Exponer funciones globales para botones inline
   window.AL_APP = {
     openPdf: openPdfModal,
+    openVideo: openVideoModal,
+    openImage: openImageModal,
+    openMedia: openMedia,
     openGCalModal: openGCalModal,
     openClassroom: openClassroomSubject,
     openUnitInClassroom: function (subjId, unitId) {
@@ -991,6 +1058,13 @@
             </div>
             <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
               ${
+                s.videoSesion1
+                  ? `<button type="button" class="btn btn-sm" style="background:#f43f5e; color:#fff; border:none; font-weight:700; display:flex; align-items:center; gap:0.35rem;" onclick="window.AL_APP.openVideo('${s.videoSesion1.replace(/'/g, "\\'")}', 'Sesión 1 Grabada — ${s.nombreCorto}', '${s.nombre}')" title="Ver clase síncrona grabada (.mp4)">
+                       🎬 Ver Clase Grabada Sesión 1
+                     </button>`
+                  : ""
+              }
+              ${
                 s.archivoPlanificacion
                   ? `<button type="button" class="btn btn-sm" style="background:#fff; color:#0f172a; border:none;" onclick="window.AL_APP.openPdf('${s.archivoPlanificacion.replace(/'/g, "\\'")}', 'Planificación Oficial — ${s.nombreCorto}')">
                        📄 Abrir Planificación Oficial (PDF)
@@ -1180,6 +1254,19 @@
                                   )
                                   .join("")}
                                 ${
+                                  ses.videoGrabado || (ses.num === 1 && s.videoSesion1)
+                                    ? `<button
+                                         type="button"
+                                         class="btn btn-sm"
+                                         style="padding:0.2rem 0.5rem; font-size:0.71rem; background:#f43f5e; color:#fff; border:none; display:flex; align-items:center; gap:0.25rem;"
+                                         onclick="window.AL_APP.openVideo('${(ses.videoGrabado || s.videoSesion1).replace(/'/g, "\\'")}', 'Sesión ${ses.num}: ${ses.tema.replace(/'/g, "\\'")}', '${s.nombre}')"
+                                         title="Ver clase grabada en vídeo"
+                                       >
+                                         🎬 Ver Grabación ${ses.duracionMin ? `(${ses.duracionMin}m)` : ""}
+                                       </button>`
+                                    : ""
+                                }
+                                ${
                                   relatedTask
                                     ? `<button
                                          type="button"
@@ -1263,7 +1350,7 @@
               </div>
               <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
                 <a href="${gcalUrl}" target="_blank" rel="noopener" class="btn btn-gcal btn-sm">
-                  📅 + Google Calendar (${GCAL_ACCOUNT}) ↗
+                  📅 + Google Calendar ↗
                 </a>
                 <select id="class-task-status-sel" class="subject-filter-select">
                   <option value="pending" ${status === "pending" ? "selected" : ""}>⏳ Pendiente</option>
@@ -1306,6 +1393,41 @@
                   .join("")}
               </div>
             </div>
+
+            <!-- Materiales Oficiales Subidos (Enunciados, Rúbricas, Plantillas y Vídeos del Caso) -->
+            ${(activeTask.archivosAdjuntos && activeTask.archivosAdjuntos.length > 0) || activeTask.archivoEnunciado ? `
+            <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:10px; padding:0.9rem 1.1rem; margin-bottom:1.2rem; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
+                <h4 style="margin:0; font-size:0.95rem; display:flex; align-items:center; gap:0.4rem;">
+                  <span>📎</span> Documentación y Recursos Oficiales de la Entrega
+                </h4>
+                <span style="font-size:0.75rem; color:var(--text-muted); background:var(--bg-surface-alt); padding:0.2rem 0.55rem; border-radius:6px;">
+                  ${(activeTask.archivosAdjuntos || []).length} archivo(s) disponible(s)
+                </span>
+              </div>
+              <div style="display:flex; gap:0.6rem; flex-wrap:wrap; align-items:center;">
+                ${(activeTask.archivosAdjuntos || []).map(att => {
+                  const isVideo = att.tipo === 'video' || att.path.endsWith('.mp4');
+                  const isImage = att.tipo === 'image' || att.path.endsWith('.jpg') || att.path.endsWith('.png');
+                  const isDoc = att.tipo === 'doc' || att.path.endsWith('.doc') || att.path.endsWith('.docx');
+                  const icon = isVideo ? '🎬' : isImage ? '🖼️' : isDoc ? '📝' : '📄';
+                  const btnClass = isVideo ? 'btn-primary' : isImage ? 'btn-secondary' : isDoc ? 'btn-primary' : 'btn';
+                  return `
+                    <button
+                      type="button"
+                      class="btn btn-sm ${btnClass}"
+                      style="display:flex; align-items:center; gap:0.4rem; padding:0.38rem 0.75rem; font-size:0.79rem;"
+                      onclick="window.AL_APP.openMedia('${att.path.replace(/'/g, "\\'")}', '${att.titulo.replace(/'/g, "\\'")}', '${att.tipo}')"
+                      title="${att.titulo}"
+                    >
+                      <span>${icon}</span>
+                      <span>${att.titulo}</span>
+                    </button>
+                  `;
+                }).join("")}
+              </div>
+            </div>
+            ` : ""}
 
             <div style="margin-bottom:1.2rem;">
               <h4 style="margin:0 0 0.55rem; font-size:0.94rem;">☑️ Checklist de Subtareas para esta Entrega</h4>
@@ -2161,7 +2283,7 @@
 
         <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
           <a href="${gcalUrl}" target="_blank" rel="noopener" class="btn btn-gcal btn-sm">
-            📅 + Google Calendar (${GCAL_ACCOUNT}) ↗
+            📅 + Google Calendar ↗
           </a>
           <select id="workspace-status-select" class="subject-filter-select">
             <option value="pending" ${status === "pending" ? "selected" : ""}>⏳ Pendiente</option>
@@ -2170,6 +2292,40 @@
           </select>
         </div>
       </div>
+
+      ${(task.archivosAdjuntos && task.archivosAdjuntos.length > 0) || task.archivoEnunciado ? `
+      <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:10px; padding:0.9rem 1.1rem; margin-bottom:1.25rem; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.75rem;">
+          <h4 style="margin:0; font-size:0.95rem; display:flex; align-items:center; gap:0.4rem;">
+            <span>📎</span> Documentación y Recursos Oficiales de la Entrega
+          </h4>
+          <span style="font-size:0.75rem; color:var(--text-muted); background:var(--bg-surface-alt); padding:0.2rem 0.55rem; border-radius:6px;">
+            ${(task.archivosAdjuntos || []).length} archivo(s) disponible(s)
+          </span>
+        </div>
+        <div style="display:flex; gap:0.6rem; flex-wrap:wrap; align-items:center;">
+          ${(task.archivosAdjuntos || []).map(att => {
+            const isVideo = att.tipo === 'video' || att.path.endsWith('.mp4');
+            const isImage = att.tipo === 'image' || att.path.endsWith('.jpg') || att.path.endsWith('.png');
+            const isDoc = att.tipo === 'doc' || att.path.endsWith('.doc') || att.path.endsWith('.docx');
+            const icon = isVideo ? '🎬' : isImage ? '🖼️' : isDoc ? '📝' : '📄';
+            const btnClass = isVideo ? 'btn-primary' : isImage ? 'btn-secondary' : isDoc ? 'btn-primary' : 'btn';
+            return `
+              <button
+                type="button"
+                class="btn btn-sm ${btnClass}"
+                style="display:flex; align-items:center; gap:0.4rem; padding:0.38rem 0.75rem; font-size:0.79rem;"
+                onclick="window.AL_APP.openMedia('${att.path.replace(/'/g, "\\'")}', '${att.titulo.replace(/'/g, "\\'")}', '${att.tipo}')"
+                title="${att.titulo}"
+              >
+                <span>${icon}</span>
+                <span>${att.titulo}</span>
+              </button>
+            `;
+          }).join("")}
+        </div>
+      </div>
+      ` : ""}
 
       <div style="margin-bottom:1.25rem;">
         <h4 style="margin:0 0 0.6rem; font-size:0.95rem;">☑️ Lista de Control Paso a Paso (Checklist)</h4>
@@ -3076,10 +3232,10 @@
     const lines = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//UCJC Mencion Audicion y Lenguaje//herrizpab@gmail.com//ES",
+      "PRODID:-//UCJC Mencion Audicion y Lenguaje//ES",
       "CALSCALE:GREGORIAN",
       "METHOD:PUBLISH",
-      "X-WR-CALNAME:Mención AL UCJC (herrizpab@gmail.com)",
+      "X-WR-CALNAME:Mención AL UCJC (Entregas y Exámenes)",
       "X-WR-TIMEZONE:Europe/Madrid"
     ];
 
@@ -3128,7 +3284,7 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "Calendario_Mencion_AL_UCJC_herrizpab.ics";
+    a.download = "Calendario_Mencion_AL_UCJC.ics";
     a.click();
     URL.revokeObjectURL(url);
   }
@@ -3206,6 +3362,244 @@
   }
 
   // ==========================================================================
+  // VISTA 8: CENTRO MULTIMEDIA, REPRODUCTOR DE VÍDEO Y EXTRACTOR
+  // ==========================================================================
+  function renderMultimediaView() {
+    const container = document.getElementById("multimedia-grid-container");
+    if (!container) return;
+
+    const catalog = window.MULTIMEDIA_CATALOG || {
+      totalVideos: 0,
+      totalPdfs: 0,
+      totalImages: 0,
+      totalDocs: 0,
+      files: { videos: [], pdfs: [], images: [], docs: [] }
+    };
+
+    const files = catalog.files || { videos: [], pdfs: [], images: [], docs: [] };
+
+    // Actualizar contadores
+    const vCountEl = document.getElementById("stat-videos-count");
+    const pCountEl = document.getElementById("stat-pdfs-count");
+    const iCountEl = document.getElementById("stat-images-count");
+    const dCountEl = document.getElementById("stat-docs-count");
+    if (vCountEl) vCountEl.textContent = String(catalog.totalVideos || (files.videos ? files.videos.length : 0));
+    if (pCountEl) pCountEl.textContent = String(catalog.totalPdfs || (files.pdfs ? files.pdfs.length : 0));
+    if (iCountEl) iCountEl.textContent = String(catalog.totalImages || (files.images ? files.images.length : 0));
+    if (dCountEl) dCountEl.textContent = String(catalog.totalDocs || (files.docs ? files.docs.length : 0));
+
+    const subFilter = state.multimediaSubFilter || "all";
+    const typeFilter = state.multimediaTypeFilter || "all";
+    const query = (state.searchQuery || "").toLowerCase();
+
+    let itemsToRender = [];
+
+    if (typeFilter === "all" || typeFilter === "video") {
+      (files.videos || []).forEach((item) => itemsToRender.push({ ...item, mediaType: "video" }));
+    }
+    if (typeFilter === "all" || typeFilter === "pdf") {
+      (files.pdfs || []).forEach((item) => itemsToRender.push({ ...item, mediaType: "pdf" }));
+    }
+    if (typeFilter === "all" || typeFilter === "image") {
+      (files.images || []).forEach((item) => itemsToRender.push({ ...item, mediaType: "image" }));
+    }
+    if (typeFilter === "all" || typeFilter === "doc") {
+      (files.docs || []).forEach((item) => itemsToRender.push({ ...item, mediaType: "doc" }));
+    }
+
+    // Filtrar por asignatura
+    if (subFilter !== "all") {
+      itemsToRender = itemsToRender.filter((item) => item.asignaturaId === subFilter);
+    }
+
+    // Filtrar por búsqueda
+    if (query) {
+      itemsToRender = itemsToRender.filter((item) => {
+        return (
+          item.nombre.toLowerCase().includes(query) ||
+          (item.asignaturaNombre || "").toLowerCase().includes(query) ||
+          (item.previewText || "").toLowerCase().includes(query)
+        );
+      });
+    }
+
+    if (itemsToRender.length === 0) {
+      container.innerHTML = `
+        <div style="grid-column: 1 / -1; padding:3rem 1.5rem; text-align:center; background:var(--bg-card); border-radius:12px; border:1px dashed var(--border-color);">
+          <div style="font-size:2.5rem; margin-bottom:0.5rem;">📂</div>
+          <h4 style="margin:0 0 0.4rem; font-size:1.1rem;">No se encontraron recursos multimedia</h4>
+          <p style="margin:0; font-size:0.88rem; color:var(--text-muted);">
+            No hay recursos que coincidan con los filtros seleccionados (Asignatura: <strong>${subFilter}</strong>, Tipo: <strong>${typeFilter}</strong>).
+          </p>
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = itemsToRender
+      .map((item) => {
+        const subj = getSubject(item.asignaturaId) || {
+          color: "#6366f1",
+          nombreCorto: item.asignaturaNombre || "Asignatura"
+        };
+
+        if (item.mediaType === "video") {
+          const thumbHtml = item.thumbnail
+            ? `<img src="${encodeURI(item.thumbnail)}" alt="Miniatura de ${item.nombre}" loading="lazy" style="width:100%; height:160px; object-fit:cover; border-radius:8px 8px 0 0;" />`
+            : `<div style="height:160px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg, #1e1b4b, #312e81); border-radius:8px 8px 0 0; font-size:3rem;">🎬</div>`;
+
+          return `
+            <div class="card media-card" style="padding:0; overflow:hidden; border:1px solid var(--border-color); display:flex; flex-direction:column; justify-content:space-between;">
+              <div style="position:relative; cursor:pointer;" onclick="window.AL_APP.openVideo('${item.relPath.replace(/'/g, "\\'")}', '${item.nombre.replace(/'/g, "\\'")}', '${item.asignaturaNombre.replace(/'/g, "\\'")}')">
+                ${thumbHtml}
+                <div style="position:absolute; inset:0; background:rgba(0,0,0,0.25); display:flex; align-items:center; justify-content:center;">
+                  <div style="width:48px; height:48px; border-radius:50%; background:rgba(239,68,68,0.92); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.4rem; box-shadow:0 4px 14px rgba(0,0,0,0.4);">
+                    ▶
+                  </div>
+                </div>
+                <div style="position:absolute; bottom:8px; right:8px; background:rgba(0,0,0,0.78); color:#fff; font-size:0.72rem; padding:0.2rem 0.5rem; border-radius:4px; font-weight:700;">
+                  ⏱️ ${item.durationMin ? item.durationMin + " min" : "Vídeo"}
+                </div>
+                <div style="position:absolute; top:8px; left:8px; background:${subj.color}; color:#fff; font-size:0.7rem; padding:0.18rem 0.5rem; border-radius:4px; font-weight:700;">
+                  ${subj.nombreCorto}
+                </div>
+              </div>
+              <div style="padding:0.9rem; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h4 style="margin:0 0 0.35rem; font-size:0.88rem; line-height:1.35; word-break:break-word;" title="${item.nombre}">
+                    ${item.nombre}
+                  </h4>
+                  <div style="display:flex; gap:0.4rem; flex-wrap:wrap; font-size:0.74rem; color:var(--text-muted); margin-bottom:0.75rem;">
+                    <span>📐 ${item.resolution || "HD"}</span>
+                    <span>•</span>
+                    <span>📦 ${item.sizeMb} MB</span>
+                    <span>•</span>
+                    <span>🎬 ${item.ext.toUpperCase()}</span>
+                  </div>
+                </div>
+                <div style="display:flex; gap:0.4rem;">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-sm"
+                    style="flex:1; display:flex; align-items:center; justify-content:center; gap:0.35rem; font-weight:700;"
+                    onclick="window.AL_APP.openVideo('${item.relPath.replace(/'/g, "\\'")}', '${item.nombre.replace(/'/g, "\\'")}', '${item.asignaturaNombre.replace(/'/g, "\\'")}')"
+                  >
+                    ▶ Reproducir
+                  </button>
+                  <a
+                    href="${encodeURI(item.relPath)}"
+                    download
+                    class="btn btn-sm"
+                    title="Descargar vídeo al equipo"
+                    style="display:flex; align-items:center; justify-content:center; padding:0 0.6rem;"
+                  >
+                    ⬇
+                  </a>
+                </div>
+              </div>
+            </div>
+          `;
+        } else if (item.mediaType === "pdf") {
+          return `
+            <div class="card media-card" style="padding:1rem; border:1px solid var(--border-color); display:flex; flex-direction:column; justify-content:space-between; border-left:4px solid #ef4444;">
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.4rem; gap:0.5rem;">
+                  <span class="badge" style="background:${subj.color}20; color:${subj.color}; font-size:0.72rem;">${subj.nombreCorto}</span>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">📄 ${item.numPages ? item.numPages + " págs" : "PDF"}</span>
+                </div>
+                <h4 style="margin:0 0 0.4rem; font-size:0.87rem; line-height:1.3; word-break:break-word;" title="${item.nombre}">
+                  ${item.nombre}
+                </h4>
+                ${
+                  item.previewText
+                    ? `
+                  <p style="font-size:0.76rem; color:var(--text-secondary); line-height:1.35; margin:0 0 0.75rem; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;">
+                    ${item.previewText}
+                  </p>
+                `
+                    : `
+                  <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.75rem;">📦 ${item.sizeMb} MB</div>
+                `
+                }
+              </div>
+              <div style="display:flex; gap:0.4rem; margin-top:0.5rem;">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-sm"
+                  style="flex:1; display:flex; align-items:center; justify-content:center; gap:0.35rem; font-size:0.78rem;"
+                  onclick="window.AL_APP.openPdf('${item.relPath.replace(/'/g, "\\'")}', '${item.nombre.replace(/'/g, "\\'")}')"
+                >
+                  👁️ Leer PDF Oficial
+                </button>
+                <a
+                  href="${encodeURI(item.relPath)}"
+                  download
+                  class="btn btn-sm"
+                  title="Descargar PDF"
+                  style="display:flex; align-items:center; justify-content:center; padding:0 0.6rem;"
+                >
+                  ⬇
+                </a>
+              </div>
+            </div>
+          `;
+        } else if (item.mediaType === "image") {
+          return `
+            <div class="card media-card" style="padding:0; overflow:hidden; border:1px solid var(--border-color); display:flex; flex-direction:column; justify-content:space-between; border-left:4px solid #ec4899;">
+              <div style="position:relative; cursor:pointer;" onclick="window.AL_APP.openImage('${item.relPath.replace(/'/g, "\\'")}', '${item.nombre.replace(/'/g, "\\'")}', '${item.asignaturaNombre.replace(/'/g, "\\'")}')">
+                <img src="${encodeURI(item.relPath)}" alt="${item.nombre}" loading="lazy" style="width:100%; height:160px; object-fit:cover;" />
+                <div style="position:absolute; top:8px; left:8px; background:#ec4899; color:#fff; font-size:0.7rem; padding:0.18rem 0.5rem; border-radius:4px; font-weight:700;">
+                  ${subj.nombreCorto} · Rúbrica
+                </div>
+              </div>
+              <div style="padding:0.85rem; display:flex; flex-direction:column; flex:1; justify-content:space-between;">
+                <div>
+                  <h4 style="margin:0 0 0.35rem; font-size:0.86rem; line-height:1.3; word-break:break-word;">${item.nombre}</h4>
+                  <div style="font-size:0.74rem; color:var(--text-muted); margin-bottom:0.65rem;">
+                    📐 ${item.dimensions || "Imagen"} · 📦 ${item.sizeMb} MB
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-secondary btn-sm"
+                  style="width:100%; font-size:0.78rem;"
+                  onclick="window.AL_APP.openImage('${item.relPath.replace(/'/g, "\\'")}', '${item.nombre.replace(/'/g, "\\'")}', '${item.asignaturaNombre.replace(/'/g, "\\'")}')"
+                >
+                  🖼️ Ver Rúbrica en Grande
+                </button>
+              </div>
+            </div>
+          `;
+        } else {
+          // Doc / Word
+          return `
+            <div class="card media-card" style="padding:1rem; border:1px solid var(--border-color); display:flex; flex-direction:column; justify-content:space-between; border-left:4px solid #f59e0b;">
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:0.4rem;">
+                  <span class="badge" style="background:${subj.color}20; color:${subj.color}; font-size:0.72rem;">${subj.nombreCorto}</span>
+                  <span style="font-size:0.72rem; color:var(--text-muted);">📝 Word Editable</span>
+                </div>
+                <h4 style="margin:0 0 0.35rem; font-size:0.87rem; line-height:1.3; word-break:break-word;">${item.nombre}</h4>
+                <p style="font-size:0.75rem; color:var(--text-secondary); margin:0 0 0.75rem;">
+                  Plantilla editable oficial para cumplimentar y entregar en la plataforma virtual.
+                </p>
+              </div>
+              <a
+                href="${encodeURI(item.relPath)}"
+                download
+                class="btn btn-primary btn-sm"
+                style="width:100%; display:flex; align-items:center; justify-content:center; gap:0.35rem; font-size:0.78rem;"
+              >
+                📝 Descargar Plantilla Word
+              </a>
+            </div>
+          `;
+        }
+      })
+      .join("");
+  }
+
+  // ==========================================================================
   // RENDERIZADO GLOBAL E INICIALIZACIÓN DE EVENTOS
   // ==========================================================================
   function renderAll() {
@@ -3219,6 +3613,7 @@
     renderStudyView();
     renderClinicalTools();
     renderGradesCalculator();
+    renderMultimediaView();
   }
 
   function initApp() {
@@ -3366,6 +3761,74 @@
       document.documentElement.setAttribute("data-theme", state.theme);
       saveState();
     });
+
+    // Control de velocidad y cierre del reproductor de vídeo
+    document.querySelectorAll(".btn-video-speed").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const video = document.getElementById("class-video-player");
+        if (!video) return;
+        const speed = parseFloat(btn.dataset.speed);
+        video.playbackRate = speed;
+        document.querySelectorAll(".btn-video-speed").forEach((b) => {
+          b.classList.toggle("active", b === btn);
+        });
+      });
+    });
+
+    const videoDialog = document.getElementById("video-dialog");
+    if (videoDialog) {
+      videoDialog.addEventListener("close", () => {
+        const video = document.getElementById("class-video-player");
+        if (video) {
+          video.pause();
+          video.removeAttribute("src");
+          video.load();
+        }
+      });
+    }
+
+    const imageDialog = document.getElementById("image-dialog");
+    if (imageDialog) {
+      imageDialog.addEventListener("close", () => {
+        const img = document.getElementById("image-preview");
+        if (img) img.src = "";
+      });
+    }
+
+    // Filtros de la Mediateca
+    document.querySelectorAll(".btn-sub-filter").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.multimediaSubFilter = btn.dataset.sub;
+        document.querySelectorAll(".btn-sub-filter").forEach((b) =>
+          b.classList.toggle("active", b.dataset.sub === state.multimediaSubFilter)
+        );
+        saveState();
+        renderMultimediaView();
+      });
+    });
+
+    document.querySelectorAll(".btn-type-filter").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.multimediaTypeFilter = btn.dataset.type;
+        document.querySelectorAll(".btn-type-filter").forEach((b) =>
+          b.classList.toggle("active", b.dataset.type === state.multimediaTypeFilter)
+        );
+        saveState();
+        renderMultimediaView();
+      });
+    });
+
+    const extractorInfoBtn = document.getElementById("btn-run-extractor-info");
+    if (extractorInfoBtn) {
+      extractorInfoBtn.addEventListener("click", () => {
+        alert(
+          "🔄 CÓMO ACTUALIZAR LA WEB CON NUEVOS ARCHIVOS:\n\n" +
+          "1. Coloca los nuevos vídeos (.mp4), rúbricas (.jpg) o PDFs en la carpeta de la asignatura correspondiente (PSICOPATO, anatomia, TRASTORN. ORAL, TRASTORN. ESCR, TIC).\n\n" +
+          "2. Haz doble clic en 'EXTRAER_Y_ACTUALIZAR.bat' en la carpeta raíz.\n\n" +
+          "3. La herramienta extraerá automáticamente duraciones, resoluciones, miniaturas de vídeo con OpenCV, textos y sincronizará la web y el calendario iCalendar."
+        );
+      });
+    }
 
     initPomodoro();
     switchView(state.activeView || "calendario");

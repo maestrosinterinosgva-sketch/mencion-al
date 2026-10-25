@@ -1370,3 +1370,56 @@ dialog.app-dialog::backdrop {
   }
 }
 
+/* ==========================================================================
+   MEDIATECA, REPRODUCTOR DE VÍDEO Y MODALES MULTIMEDIA
+   ========================================================================== */
+.video-modal {
+  max-width: 980px !important;
+  width: 95vw !important;
+  background: var(--bg-surface) !important;
+}
+
+.image-modal {
+  max-width: 920px !important;
+  width: 95vw !important;
+  background: var(--bg-surface) !important;
+}
+
+.media-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--bg-surface);
+}
+
+.media-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-sub-filter.active,
+.btn-type-filter.active {
+  background-color: var(--brand-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--brand-primary) !important;
+  font-weight: 700 !important;
+}
+
+.btn-video-speed {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.btn-video-speed:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: var(--text-primary);
+}
+
+.btn-video-speed.active {
+  background: var(--brand-primary) !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+}
+

@@ -19,7 +19,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "psicopatologia",
     numero: 1,
     titulo: "Unidad 1: Hacia el conocimiento de la psicopatología de la audición y el lenguaje",
-    pdfFile: "Psicopatología de la audición y el lenguaje_Unidad 1 (1).pdf",
+    pdfFile: "PSICOPATO/Psicopatología de la audición y el lenguaje_Unidad 1 (1).pdf",
     indice: [
       "1.1. ¿Qué es la psicopatología? Concepto de normalidad y psicopatología infantil",
       "1.2. Modelos de estudio: Modelo médico o biológico vs Modelo conductual o educativo",
@@ -48,7 +48,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "psicopatologia",
     numero: 2,
     titulo: "Unidad 2: Psicopatología asociada a los trastornos de la comunicación y del habla",
-    pdfFile: "Psicopatología de la audición y el lenguaje_Unidad 2 (1).pdf",
+    pdfFile: "PSICOPATO/Psicopatología de la audición y el lenguaje_Unidad 2 (1).pdf",
     indice: [
       "2.1. Trastornos de la comunicación según DSM-5 (TL, TSH, TFI, TCS)",
       "2.2. Trastorno de los Sonidos del Habla (TSH): alteraciones fonéticas vs fonológicas",
@@ -77,7 +77,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "psicopatologia",
     numero: 3,
     titulo: "Unidad 3: Psicopatología asociada a los trastornos del lenguaje oral y del aprendizaje",
-    pdfFile: "Psicopatología de la audición y el lenguaje_Unidad 3 (1).pdf",
+    pdfFile: "PSICOPATO/Psicopatología de la audición y el lenguaje_Unidad 3 (1).pdf",
     indice: [
       "3.1. Inicio Tardío del Lenguaje (ITL) / Hablantes tardíos (Late Talkers)",
       "3.2. Trastorno del Desarrollo del Lenguaje (TDL) vs Trastorno del Lenguaje (TL): Consenso Delphi 2026 (Andreu et al.)",
@@ -106,7 +106,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "psicopatologia",
     numero: 4,
     titulo: "Unidad 4: Psicopatología de la AL en alumnado con NEE asociadas a discapacidad",
-    pdfFile: "Psicopatología de la audición y el lenguaje_Unidad 4 (1).pdf",
+    pdfFile: "PSICOPATO/Psicopatología de la audición y el lenguaje_Unidad 4 (1).pdf",
     indice: [
       "4.1. Alumnado con NEE según LOMLOE (Art. 73)",
       "4.2. Discapacidad Intelectual: Modelo multidimensional AAIDD 2021 (Schalock et al.) e intensidad de apoyos",
@@ -136,7 +136,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "psicopatologia",
     numero: 5,
     titulo: "Unidad 5: Psicopatología de la AL en alumnado con NEAE",
-    pdfFile: "Psicopatología de la audición y el lenguaje_Unidad 5 (1).pdf",
+    pdfFile: "PSICOPATO/Psicopatología de la audición y el lenguaje_Unidad 5 (1).pdf",
     indice: [
       "5.1. Alumnado con NEAE según LOMLOE (Art. 71)",
       "5.2. Retraso Madurativo / Retraso Global del Desarrollo (RGD <5 años)",
@@ -170,7 +170,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "anatomia",
     numero: 1,
     titulo: "Unidad 1: Morfología microscópica del sistema nervioso en relación con el lenguaje (I)",
-    pdfFile: "Anatomía Fisiología y Neurología del Lenguaje_Unidad 1(1).pdf",
+    pdfFile: "anatomia/Anatomía Fisiología y Neurología del Lenguaje_Unidad 1(1).pdf",
     indice: [
       "1.1. La neurona (soma, dendritas, axón, vaina de mielina) y la sinapsis",
       "1.2. Sustancia gris vs Sustancia blanca en el SNC",
@@ -200,7 +200,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "anatomia",
     numero: 2,
     titulo: "Unidad 2: Morfología microscópica del sistema nervioso en relación con el lenguaje (II): Sistema receptor",
-    pdfFile: "Anatomía Fisiología y Neurología del Lenguaje_Unidad 2(1).pdf",
+    pdfFile: "anatomia/Anatomía Fisiología y Neurología del Lenguaje_Unidad 2(1).pdf",
     indice: [
       "2.1. Receptores sensoriales (exterorreceptores, interorreceptores, propiorreceptores) y Sistema Nervioso Periférico (SNP)",
       "2.2. Anatomía del oído: Oído externo, Oído medio (caja timpánica, cadena osicular y trompa de Eustaquio) y Oído interno (laberinto óseo y membranoso)",
@@ -229,7 +229,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "anatomia",
     numero: 3,
     titulo: "Unidad 3: Órganos motores o expresivos en el sistema fonoarticulatorio",
-    pdfFile: "Anatomía Fisiología y Neurología del Lenguaje_Unidad 3(1).pdf",
+    pdfFile: "anatomia/Anatomía Fisiología y Neurología del Lenguaje_Unidad 3(1).pdf",
     indice: [
       "3.1. Cavidades infraglóticas (sistema respiratorio: diafragma, pulmones, bronquios, tráquea)",
       "3.2. Cavidad glótica o laríngea: esqueleto cartilaginoso, musculatura intrínseca y fisiología de la fonación (Efecto Bernoulli)",
@@ -258,7 +258,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "anatomia",
     numero: 4,
     titulo: "Unidad 4: Organización fisiológica del lenguaje (I)",
-    pdfFile: "Anatomía Fisiología y Neurología del Lenguaje_Unidad 4(1).pdf",
+    pdfFile: "anatomia/Anatomía Fisiología y Neurología del Lenguaje_Unidad 4(1).pdf",
     indice: [
       "4.1. Requisitos de los sistemas lingüísticos (Hockett / Cuetos: doble articulación, arbitrariedad, productividad, desplazamiento)",
       "4.2. Dimensión estructural: Modelo Multimodal Cerebral del Lenguaje (González y Hornauer-Hughes, 2014)",
@@ -287,7 +287,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "anatomia",
     numero: 5,
     titulo: "Unidad 5: Organización fisiológica del lenguaje (II): Percepción, comprensión y producción",
-    pdfFile: "Anatomía Fisiología y Neurología del Lenguaje_Unidad 5(1).pdf",
+    pdfFile: "anatomia/Anatomía Fisiología y Neurología del Lenguaje_Unidad 5(1).pdf",
     indice: [
       "5.1. Percepción del habla: percepción categórica, Teoría Motora (Liberman), Efecto McGurk y restauración fonémica",
       "5.2. Percepción del lenguaje escrito: movimientos sacádicos, fijaciones (225 ms), regresiones (10-15%) y Modelo Interactivo de McClelland y Rumelhart",
@@ -320,7 +320,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "oral",
     numero: 1,
     titulo: "Unidad 1: Introducción al lenguaje oral, desarrollo evolutivo, prevención y marco LOMLOE",
-    pdfFile: "Evaluación e intervención en los trastornos del lenguaje oral_Unidad 1.pdf",
+    pdfFile: "TRASTORN. ORAL/Evaluación e intervención en los trastornos del lenguaje oral_Unidad 1.pdf",
     indice: [
       "1.1. Concepto y dimensiones del lenguaje oral: Forma, Contenido y Uso",
       "1.2. Etapas del desarrollo del lenguaje: Etapa prelingüística (0-12 meses) y Etapa lingüística (12 meses a 6 años)",
@@ -349,7 +349,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "oral",
     numero: 2,
     titulo: "Unidad 2: Alteraciones del habla y la voz primarias: RSH y TSH",
-    pdfFile: "Evaluación e intervención en los trastornos del lenguaje oral_Unidad 2.pdf",
+    pdfFile: "TRASTORN. ORAL/Evaluación e intervención en los trastornos del lenguaje oral_Unidad 2.pdf",
     indice: [
       "2.1. Evolución terminológica: de la dislalia al Trastorno de los Sonidos del Habla (TSH - Susanibar et al., 2016)",
       "2.2. Retraso Simple del Habla (RSH) vs TSH (fonético, fonológico y fonético-fonológico)",
@@ -377,7 +377,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "oral",
     numero: 3,
     titulo: "Unidad 3: Alteraciones del habla y la voz secundarias: Disartria, Disglosia y Disfonía infantil",
-    pdfFile: "Evaluación e intervención en los trastornos del lenguaje oral_Unidad 3.pdf",
+    pdfFile: "TRASTORN. ORAL/Evaluación e intervención en los trastornos del lenguaje oral_Unidad 3.pdf",
     indice: [
       "3.1. Disartria: etiología neurológica, clasificación clínica (flácida, espástica, atáxica, hipocinética, hipercinética, mixta) y evaluación (PEVH, AIDS)",
       "3.2. Disglosia: clasificación topográfica (labial, mandibular, dental, lingual, palatina, nasal) y evaluación miofuncional (OMES-E, PEMO)",
@@ -405,7 +405,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "oral",
     numero: 4,
     titulo: "Unidad 4: Alteraciones de la fluidez del habla: Disfemia y Taquifemia",
-    pdfFile: "Evaluación e intervención en los trastornos del lenguaje oral_Unidad 4.pdf",
+    pdfFile: "TRASTORN. ORAL/Evaluación e intervención en los trastornos del lenguaje oral_Unidad 4.pdf",
     indice: [
       "4.1. Fluidez verbal y diagnóstico diferencial: Disfluencia evolutiva (fisiológica) vs Tartamudez (Disfemia) vs Taquifemia",
       "4.2. Sintomatología manifiesta y encubierta: La metáfora del Iceberg de la Disfemia (Sheehan, 1970)",
@@ -434,7 +434,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "oral",
     numero: 5,
     titulo: "Unidad 5: Alteraciones del desarrollo del lenguaje y la comunicación: RSL, TDL, Mutismo, Afasia infantil y Enfermedades raras",
-    pdfFile: "Evaluación e intervención en los trastornos del lenguaje oral_Unidad 5.pdf",
+    pdfFile: "TRASTORN. ORAL/Evaluación e intervención en los trastornos del lenguaje oral_Unidad 5.pdf",
     indice: [
       "5.1. Retraso Simple del Lenguaje (RSL / REL): perfil evolutivo y evaluación (PLON-R, ITPA, BLOC)",
       "5.2. Trastorno del Desarrollo del Lenguaje (TDL): marcadores cognitivos (memoria fonológica a corto plazo - Ahufinger et al., 2021) y evaluación (CELF-5)",
@@ -467,7 +467,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "escrita",
     numero: 1,
     titulo: "Unidad 1: Bases teóricas de la lengua escrita desde una perspectiva multifocal",
-    pdfFile: "Evaluación e intervención en los trastornos del lengua escrita Unidad 1.pdf",
+    pdfFile: "TRASTORN. ESCR/Evaluación e intervención en los trastornos del lengua escrita Unidad 1.pdf",
     indice: [
       "1.1. Evolución conceptual: de la madurez lectora al aprendizaje del lenguaje escrito",
       "1.2. Procesos cognitivos automáticos (bajo nivel) vs procesos controlados (alto nivel)",
@@ -494,7 +494,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "escrita",
     numero: 2,
     titulo: "Unidad 2: El sistema de lectura y escritura: bases neurobiológicas y modelos cognitivos",
-    pdfFile: "Evaluación e intervención en los trastornos del lengua escrita Unidad 2.pdf",
+    pdfFile: "TRASTORN. ESCR/Evaluación e intervención en los trastornos del lengua escrita Unidad 2.pdf",
     indice: [
       "2.1. Neurobiología de la lectura y escritura: Circuito Dorsal (temporoparietal), Circuito Ventral (occipitotemporal / VWFA) y Área de Exner",
       "2.2. Modelos de lectura: Modelo de Doble Ruta en Cascada (Coltheart et al., 2001) y Modelo Conexionista en Triángulo (Seidenberg y McClelland, 1989)",
@@ -521,7 +521,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "escrita",
     numero: 3,
     titulo: "Unidad 3: Trastornos de aprendizaje de la lectura: Evaluación e intervención en Dislexia",
-    pdfFile: "Evaluación e intervención en los trastornos del lengua escrita Unidad 3.pdf",
+    pdfFile: "TRASTORN. ESCR/Evaluación e intervención en los trastornos del lengua escrita Unidad 3.pdf",
     indice: [
       "3.1. Definición de Dislexia: criterios DSM-5 y nuevo Consenso Delphi de Carroll et al. (2025)",
       "3.2. Clasificación: Dislexias Adquiridas (periféricas y centrales: fonológica, superficial, profunda) vs Dislexias Evolutivas",
@@ -549,7 +549,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "escrita",
     numero: 4,
     titulo: "Unidad 4: Trastornos de aprendizaje de la escritura: Disgrafía y Disortografía",
-    pdfFile: "Evaluación e intervención en los trastornos del lengua escrita Unidad 4.pdf",
+    pdfFile: "TRASTORN. ESCR/Evaluación e intervención en los trastornos del lengua escrita Unidad 4.pdf",
     indice: [
       "4.1. Delimitación conceptual: Disgrafía (motriz vs central/lingüística) y Disortografía (Rivas y Fernández, 2011)",
       "4.2. Clasificación de la Disortografía (Temporal, Perceptivo-kinestésica, Disortocinética, Visoespacial, Dinámica y Semántica - Otondo y Bascur, 2020)",
@@ -578,7 +578,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "escrita",
     numero: 5,
     titulo: "Unidad 5: Trastornos de aprendizaje de las matemáticas: Discalculia y su relación con el lenguaje",
-    pdfFile: "Evaluación e intervención en los trastornos del lengua escrita Unidad 5.pdf",
+    pdfFile: "TRASTORN. ESCR/Evaluación e intervención en los trastornos del lengua escrita Unidad 5.pdf",
     indice: [
       "5.1. El desarrollo del sentido numérico y la línea numérica mental (Coelho, 2012; Dehaene)",
       "5.2. Definición y clasificación de la Discalculia del Desarrollo (primaria/acalculia vs secundaria y disaritmética)",
@@ -610,7 +610,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "saac",
     numero: 1,
     titulo: "Unidad 1: Introducción a los Sistemas Aumentativos y Alternativos de Comunicación (SAAC)",
-    pdfFile: "Los sistemas alternativos y aumentativos Unidad 1.pdf",
+    pdfFile: "TIC/Los sistemas alternativos y aumentativos Unidad 1.pdf",
     indice: [
       "1.1. Concepto de Comunicación Aumentativa y Alternativa (CAA - CEAPAT, 2020): mitos y evidencias",
       "1.2. Taxonomía de los SAAC: Sistemas sin ayuda (símbolos gestuales) vs Sistemas con ayuda (símbolos gráficos y tangibles)",
@@ -639,7 +639,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "saac",
     numero: 2,
     titulo: "Unidad 2: SAAC y ayudas técnicas en la discapacidad auditiva",
-    pdfFile: "Los sistemas alternativos y aumentativos Unidad 2.pdf",
+    pdfFile: "TIC/Los sistemas alternativos y aumentativos Unidad 2.pdf",
     indice: [
       "2.1. Perspectivas sobre la sordera: enfoque médico-audiológico, enfoque sociocultural y enfoque multidimensional",
       "2.2. Prótesis auditivas (audífonos, implante coclear, implante osteointegrado BAHA e implante de tronco cerebral) y ayudas técnicas (sistema FM y bucle magnético)",
@@ -668,7 +668,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "saac",
     numero: 3,
     titulo: "Unidad 3: SAAC en los Trastornos del Espectro Autista (TEA)",
-    pdfFile: "Los sistemas alternativos y aumentativos Unidad 3.pdf",
+    pdfFile: "TIC/Los sistemas alternativos y aumentativos Unidad 3.pdf",
     indice: [
       "3.1. Perfil comunicativo en el TEA y prelación jerárquica de objetivos de intervención",
       "3.2. El Sistema de Comunicación por Intercambio de Imágenes (PECS de Bondy y Frost, 1994): las 6 fases paso a paso",
@@ -696,7 +696,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "saac",
     numero: 4,
     titulo: "Unidad 4: SAAC y productos de apoyo en la discapacidad física o motora",
-    pdfFile: "Los sistemas alternativos y aumentativos Unidad 4.pdf",
+    pdfFile: "TIC/Los sistemas alternativos y aumentativos Unidad 4.pdf",
     indice: [
       "4.1. Alteraciones neuromotoras (parálisis cerebral: espástica, atetoide/discinesia, atáxica, mixta; hipotonía, hipertonía, distonía)",
       "4.2. Sistemas gráficos de comunicación con ayuda: SPC (Mayer-Johnson), ARASAAC, Sistema BLISS, Minspeak y Rebus",
@@ -725,7 +725,7 @@ window.AL_DATA.unidades = [
     asignaturaId: "saac",
     numero: 5,
     titulo: "Unidad 5: Diseño de adaptaciones curriculares, Lenguaje Natural Asistido (LNA) y aplicaciones TIC",
-    pdfFile: "Los sistemas alternativos y aumentativos Unidad 5.pdf",
+    pdfFile: "TIC/Los sistemas alternativos y aumentativos Unidad 5.pdf",
     indice: [
       "5.1. Adaptaciones Curriculares Individualizadas (ACI) en la LOMLOE (Art. 71 y 74; RD 157/2022): de acceso vs no significativas vs significativas",
       "5.2. Metodología de enseñanza de SAAC: Lenguaje Natural Asistido (LNA / modelado), moldeamiento, encadenamiento hacia atrás y espera estructurada",
