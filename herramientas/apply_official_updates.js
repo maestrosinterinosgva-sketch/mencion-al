@@ -59,6 +59,31 @@ for (const asig of AL_DATA.asignaturas) {
   }
 }
 
+// 1.1 AUTO-LINK ANY DETECTED RECORDING SESSIONS (Sesión 2, 3, etc.) FROM CATALOG
+const catalogPath = path.join(rootDir, 'multimedia_catalog.json');
+if (fs.existsSync(catalogPath)) {
+  try {
+    const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
+    const videos = (catalog.files && catalog.files.videos) || [];
+    for (const vid of videos) {
+      const match = vid.nombre.match(/recording\s*(\d+)/i) || vid.nombre.match(/^(\d+)\.mp4$/i) || vid.nombre.match(/sesi[oó]n\s*(\d+)/i);
+      if (match) {
+        const sesNum = parseInt(match[1], 10);
+        const asig = AL_DATA.asignaturas.find(a => a.id === vid.asignaturaId);
+        if (asig && asig.sesionesSincronas) {
+          const ses = asig.sesionesSincronas.find(s => s.num === sesNum);
+          if (ses) {
+            ses.videoGrabado = vid.relPath;
+            ses.duracionMin = vid.durationMin || Math.round((vid.durationSec || 0) / 60);
+          }
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("Catalog parse error:", err);
+  }
+}
+
 // 2. DELIVERABLES DETAILED UPDATES
 const entregasMap = {};
 for (const e of AL_DATA.entregas) {

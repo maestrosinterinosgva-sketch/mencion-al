@@ -1,6 +1,6 @@
 window.MULTIMEDIA_CATALOG = {
-  "lastUpdated": "2026-10-25T20:42:42.548353",
-  "totalVideos": 8,
+  "lastUpdated": "2026-11-03T10:33:27.901942",
+  "totalVideos": 13,
   "totalPdfs": 59,
   "totalImages": 4,
   "totalDocs": 9,
@@ -21,6 +21,20 @@ window.MULTIMEDIA_CATALOG = {
         "thumbnail": "thumbnails/thumb_psicopatologia_2026_10_20_15_43_ROC_O_DANIELA_CONCHA_PSICOPATOLOG_A_DE_LA_AUDICI_N_Y_EL_LENGUAJE_recording_1_fa5aba9a-c690-5e75-8ef4-696665a47b15_recording.jpg"
       },
       {
+        "id": "psicopatologia-2026_10_27_16_57__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 2_8fecf104-d16e-54da-84bd-e8ba1615a0ab_recording.mp4",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "2026_10_27_16_57__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 2_8fecf104-d16e-54da-84bd-e8ba1615a0ab_recording.mp4",
+        "relPath": "PSICOPATO/2026_10_27_16_57__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 2_8fecf104-d16e-54da-84bd-e8ba1615a0ab_recording.mp4",
+        "sizeMb": 239.04,
+        "ext": ".mp4",
+        "durationSec": 7043.1,
+        "durationMin": 117.4,
+        "resolution": "1334x840",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_psicopatologia_2026_10_27_16_57_ROC_O_DANIELA_CONCHA_PSICOPATOLOG_A_DE_LA_AUDICI_N_Y_EL_LENGUAJE_recording_2_8fecf104-d16e-54da-84bd-e8ba1615a0ab_recording.jpg"
+      },
+      {
         "id": "anatomia-1.mp4",
         "asignaturaId": "anatomia",
         "asignaturaNombre": "Anatomía, Fisiología y Neurología del Lenguaje",
@@ -33,6 +47,20 @@ window.MULTIMEDIA_CATALOG = {
         "resolution": "1920x1080",
         "fps": 25.0,
         "thumbnail": "thumbnails/thumb_anatomia_1.jpg"
+      },
+      {
+        "id": "anatomia-2026_10_28_17_21__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 2_bdc4e04e-1db2-5bdd-8211-d5eea4cd7e69_recording.mp4",
+        "asignaturaId": "anatomia",
+        "asignaturaNombre": "Anatomía, Fisiología y Neurología del Lenguaje",
+        "nombre": "2026_10_28_17_21__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 2_bdc4e04e-1db2-5bdd-8211-d5eea4cd7e69_recording.mp4",
+        "relPath": "anatomia/2026_10_28_17_21__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 2_bdc4e04e-1db2-5bdd-8211-d5eea4cd7e69_recording.mp4",
+        "sizeMb": 395.73,
+        "ext": ".mp4",
+        "durationSec": 8450.2,
+        "durationMin": 140.8,
+        "resolution": "1920x1080",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_anatomia_2026_10_28_17_21_SARA_PRIETO_ANATOM_A_FISIOLOG_A_Y_NEUROLOG_A_DEL_LENGUAJE_recording_2_bdc4e04e-1db2-5bdd-8211-d5eea4cd7e69_recording.jpg"
       },
       {
         "id": "oral-1.mp4",
@@ -49,6 +77,20 @@ window.MULTIMEDIA_CATALOG = {
         "thumbnail": "thumbnails/thumb_oral_1.jpg"
       },
       {
+        "id": "oral-2026_10_27_18_20__SORAYA RODRÍGUEZ EITL ORAL_recording 2_be72c45a-b71b-51eb-b277-5f0cc3fd7c17_recording.mp4",
+        "asignaturaId": "oral",
+        "asignaturaNombre": "Evaluación e Intervención en los Trastornos del Lenguaje Oral",
+        "nombre": "2026_10_27_18_20__SORAYA RODRÍGUEZ EITL ORAL_recording 2_be72c45a-b71b-51eb-b277-5f0cc3fd7c17_recording.mp4",
+        "relPath": "TRASTORN. ORAL/2026_10_27_18_20__SORAYA RODRÍGUEZ EITL ORAL_recording 2_be72c45a-b71b-51eb-b277-5f0cc3fd7c17_recording.mp4",
+        "sizeMb": 229.97,
+        "ext": ".mp4",
+        "durationSec": 4551.8,
+        "durationMin": 75.9,
+        "resolution": "1664x1080",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_oral_2026_10_27_18_20_SORAYA_RODR_GUEZ_EITL_ORAL_recording_2_be72c45a-b71b-51eb-b277-5f0cc3fd7c17_recording.jpg"
+      },
+      {
         "id": "escrita-1.mp4",
         "asignaturaId": "escrita",
         "asignaturaNombre": "Evaluación e Intervención en los Trastornos de la Lengua Escrita",
@@ -61,6 +103,20 @@ window.MULTIMEDIA_CATALOG = {
         "resolution": "1280x1706",
         "fps": 25.0,
         "thumbnail": "thumbnails/thumb_escrita_1.jpg"
+      },
+      {
+        "id": "escrita-2026_10_29_18_35__DAVID SÁNCHEZ EITL ESCRITA_recording 2_0e137e68-065b-5096-993a-3da4094869e8_recording.mp4",
+        "asignaturaId": "escrita",
+        "asignaturaNombre": "Evaluación e Intervención en los Trastornos de la Lengua Escrita",
+        "nombre": "2026_10_29_18_35__DAVID SÁNCHEZ EITL ESCRITA_recording 2_0e137e68-065b-5096-993a-3da4094869e8_recording.mp4",
+        "relPath": "TRASTORN. ESCR/2026_10_29_18_35__DAVID SÁNCHEZ EITL ESCRITA_recording 2_0e137e68-065b-5096-993a-3da4094869e8_recording.mp4",
+        "sizeMb": 308.15,
+        "ext": ".mp4",
+        "durationSec": 5743.7,
+        "durationMin": 95.7,
+        "resolution": "1920x1080",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_escrita_2026_10_29_18_35_DAVID_S_NCHEZ_EITL_ESCRITA_recording_2_0e137e68-065b-5096-993a-3da4094869e8_recording.jpg"
       },
       {
         "id": "escrita-M.A números.mp4",
@@ -117,6 +173,20 @@ window.MULTIMEDIA_CATALOG = {
         "resolution": "1920x798",
         "fps": 25.0,
         "thumbnail": "thumbnails/thumb_saac_2026_10_21_17_40_C_SAR_L_PEZ_SAAC_Y_TIC_recording_1_ac74fe20-8702-5b92-bca1-cb0f1d372354_recording.jpg"
+      },
+      {
+        "id": "saac-2026_10_28_18_39__CÉSAR LÓPEZ SAAC Y TIC_recording 2_6991fe0f-2e5c-5e25-b716-c5403425ce97_recording.mp4",
+        "asignaturaId": "saac",
+        "asignaturaNombre": "Sistemas Aumentativos y Alternativos de la Comunicación y las TIC",
+        "nombre": "2026_10_28_18_39__CÉSAR LÓPEZ SAAC Y TIC_recording 2_6991fe0f-2e5c-5e25-b716-c5403425ce97_recording.mp4",
+        "relPath": "TIC/2026_10_28_18_39__CÉSAR LÓPEZ SAAC Y TIC_recording 2_6991fe0f-2e5c-5e25-b716-c5403425ce97_recording.mp4",
+        "sizeMb": 353.03,
+        "ext": ".mp4",
+        "durationSec": 5802.5,
+        "durationMin": 96.7,
+        "resolution": "1966x1044",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_saac_2026_10_28_18_39_C_SAR_L_PEZ_SAAC_Y_TIC_recording_2_6991fe0f-2e5c-5e25-b716-c5403425ce97_recording.jpg"
       }
     ],
     "pdfs": [

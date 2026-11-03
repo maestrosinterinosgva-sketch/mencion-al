@@ -60,7 +60,9 @@ window.AL_DATA = {
           "num": 2,
           "tipo": "Teórica",
           "tema": "Unidad 2",
-          "contenido": "Trastornos de la comunicación y el habla: identificación, abordaje y parámetros diferenciadores (120 min)"
+          "contenido": "Trastornos de la comunicación y el habla: identificación, abordaje y parámetros diferenciadores (120 min)",
+          "videoGrabado": "PSICOPATO/2026_10_27_16_57__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 2_8fecf104-d16e-54da-84bd-e8ba1615a0ab_recording.mp4",
+          "duracionMin": 117.4
         },
         {
           "num": 3,
@@ -126,7 +128,9 @@ window.AL_DATA = {
           "num": 2,
           "tipo": "Teórica",
           "tema": "Unidad 2",
-          "contenido": "Componentes del SNC y elementos de los órganos receptores del SNP: oído y vista (120 min)"
+          "contenido": "Componentes del SNC y elementos de los órganos receptores del SNP: oído y vista (120 min)",
+          "videoGrabado": "anatomia/2026_10_28_17_21__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 2_bdc4e04e-1db2-5bdd-8211-d5eea4cd7e69_recording.mp4",
+          "duracionMin": 140.8
         },
         {
           "num": 3,
@@ -192,7 +196,9 @@ window.AL_DATA = {
           "num": 2,
           "tipo": "Teórica",
           "tema": "Unidad 1",
-          "contenido": "Introducción al lenguaje oral. Prevención y detección de dificultades en el ámbito escolar (120 min)"
+          "contenido": "Introducción al lenguaje oral. Prevención y detección de dificultades en el ámbito escolar (120 min)",
+          "videoGrabado": "TRASTORN. ORAL/2026_10_27_18_20__SORAYA RODRÍGUEZ EITL ORAL_recording 2_be72c45a-b71b-51eb-b277-5f0cc3fd7c17_recording.mp4",
+          "duracionMin": 75.9
         },
         {
           "num": 3,
@@ -252,13 +258,15 @@ window.AL_DATA = {
           "tema": "Bienvenida e Intro Tema 1",
           "contenido": "Explicación de actividades, planificación, examen e introducción al Tema 1 (120 min)",
           "videoGrabado": "TRASTORN. ESCR/1.mp4",
-          "duracionMin": 95
+          "duracionMin": 81.8
         },
         {
           "num": 2,
           "tipo": "Teórica",
           "tema": "Unidad 1",
-          "contenido": "Características y evolución del lenguaje escrito, conciencia fonológica, diferencia entre NEE y NEAE (120 min)"
+          "contenido": "Características y evolución del lenguaje escrito, conciencia fonológica, diferencia entre NEE y NEAE (120 min)",
+          "videoGrabado": "TRASTORN. ESCR/2026_10_29_18_35__DAVID SÁNCHEZ EITL ESCRITA_recording 2_0e137e68-065b-5096-993a-3da4094869e8_recording.mp4",
+          "duracionMin": 95.7
         },
         {
           "num": 3,
@@ -318,13 +326,15 @@ window.AL_DATA = {
           "tema": "Presentación y Unidad 1",
           "contenido": "Introducción a los SAAC: comunicación aumentativa vs alternativa, taxonomía y Test ComFor (120 min)",
           "videoGrabado": "TIC/2026_10_21_17_40__CÉSAR LÓPEZ SAAC Y TIC_recording 1_ac74fe20-8702-5b92-bca1-cb0f1d372354_recording.mp4",
-          "duracionMin": 108.5
+          "duracionMin": 97.8
         },
         {
           "num": 2,
           "tipo": "Teórica",
           "tema": "Unidad 2",
-          "contenido": "SAAC en el alumnado con discapacidad auditiva: enfoque audiológico vs sociocultural, prótesis y sistemas oralistas/gestuales (120 min)"
+          "contenido": "SAAC en el alumnado con discapacidad auditiva: enfoque audiológico vs sociocultural, prótesis y sistemas oralistas/gestuales (120 min)",
+          "videoGrabado": "TIC/2026_10_28_18_39__CÉSAR LÓPEZ SAAC Y TIC_recording 2_6991fe0f-2e5c-5e25-b716-c5403425ce97_recording.mp4",
+          "duracionMin": 96.7
         },
         {
           "num": 3,

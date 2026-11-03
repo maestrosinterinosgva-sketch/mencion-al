@@ -4,12 +4,16 @@ set PATH=C:\Program Files\nodejs;C:\Users\herri\AppData\Local\Programs\Python\Py
 cd /d "%~dp0"
 
 echo ======================================================================
-echo   HERRAMIENTA EXTRACTORA DE DATOS (VIDEOS, FOTOS Y PDFS) - MENCION AL
+echo   1. CLASIFICANDO Y ORGANIZANDO CONFERENCIAS DESDE DESCARGAS...
 echo ======================================================================
 echo.
-echo Escaneando carpetas de asignaturas y extrayendo metadatos...
+python "herramientas\organizador_conferencias.py"
 echo.
 
+echo ======================================================================
+echo   2. EXTRAYENDO METADATOS (VÍDEOS, MINIATURAS, FOTOS Y PDFS)...
+echo ======================================================================
+echo.
 python "herramientas\extractor.py"
 
 echo.
