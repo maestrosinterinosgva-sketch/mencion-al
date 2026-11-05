@@ -68,7 +68,9 @@ window.AL_DATA = {
           "num": 3,
           "tipo": "Teórico-Práctica (Evaluable 0,5 pt)",
           "tema": "Taller Práctico 1 (Caso Real)",
-          "contenido": "Aprendizaje Basado en Casos sobre Unidad 2. Entrega + cuestionario en 72h (100% hasta 6 nov)."
+          "contenido": "Aprendizaje Basado en Casos sobre Unidad 2. Entrega + cuestionario en 72h (100% hasta 6 nov).",
+          "videoGrabado": "PSICOPATO/2026_11_03_16_22__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 3_f047bda6-6609-5432-8903-efe4891c4c98_recording.mp4",
+          "duracionMin": 82.3
         },
         {
           "num": 4,
@@ -136,7 +138,9 @@ window.AL_DATA = {
           "num": 3,
           "tipo": "Teórico-Práctica (Evaluable 0,5-1 pt)",
           "tema": "Taller Práctico 1",
-          "contenido": "Morfología microscópica del SN en relación con el lenguaje (II) y sistema auditivo / hipoacusia. Entrega en 72h (semana 2-6 nov)."
+          "contenido": "Morfología microscópica del SN en relación con el lenguaje (II) y sistema auditivo / hipoacusia. Entrega en 72h (semana 2-6 nov).",
+          "videoGrabado": "anatomia/2026_11_04_16_41__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 3_8c455bd2-5e7e-53c5-8579-c57e49cc1c1e_recording.mp4",
+          "duracionMin": 101.5
         },
         {
           "num": 4,
@@ -204,7 +208,9 @@ window.AL_DATA = {
           "num": 3,
           "tipo": "Teórico-Práctica (Evaluable 0,5 pt)",
           "tema": "Taller Práctico 1 (TEA Sensorial)",
-          "contenido": "Alumnado TEA: una visión desde un modelo de integración sensorial (visual, auditivo, propioceptivo). Entrega en 72h (semana 2-6 nov)."
+          "contenido": "Alumnado TEA: una visión desde un modelo de integración sensorial (visual, auditivo, propioceptivo). Entrega en 72h (semana 2-6 nov).",
+          "videoGrabado": "TRASTORN. ORAL/2026_11_03_19_48__SORAYA RODRÍGUEZ EITL ORAL_recording 3_df9d28e6-c60f-52ae-89b8-eb738f211c67_recording.mp4",
+          "duracionMin": 163
         },
         {
           "num": 4,
@@ -340,7 +346,9 @@ window.AL_DATA = {
           "num": 3,
           "tipo": "Teórico-Práctica (Evaluable 0,5 pt)",
           "tema": "Taller Práctico 1 (SAAC)",
-          "contenido": "Caso práctico de selección de SAAC y ayudas técnicas (Unidades 1 y 2). Entrega recomendada: semana 2-6 nov."
+          "contenido": "Caso práctico de selección de SAAC y ayudas técnicas (Unidades 1 y 2). Entrega recomendada: semana 2-6 nov.",
+          "videoGrabado": "TIC/2026_11_04_18_13__CÉSAR LÓPEZ SAAC Y TIC_recording 3_f05a8c20-11a0-5384-9868-dafe4153e687_recording.mp4",
+          "duracionMin": 71
         },
         {
           "num": 4,

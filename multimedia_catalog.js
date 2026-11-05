@@ -1,6 +1,6 @@
 window.MULTIMEDIA_CATALOG = {
-  "lastUpdated": "2026-11-03T10:33:27.901942",
-  "totalVideos": 13,
+  "lastUpdated": "2026-11-05T08:36:29.482061",
+  "totalVideos": 17,
   "totalPdfs": 59,
   "totalImages": 4,
   "totalDocs": 9,
@@ -35,6 +35,20 @@ window.MULTIMEDIA_CATALOG = {
         "thumbnail": "thumbnails/thumb_psicopatologia_2026_10_27_16_57_ROC_O_DANIELA_CONCHA_PSICOPATOLOG_A_DE_LA_AUDICI_N_Y_EL_LENGUAJE_recording_2_8fecf104-d16e-54da-84bd-e8ba1615a0ab_recording.jpg"
       },
       {
+        "id": "psicopatologia-2026_11_03_16_22__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 3_f047bda6-6609-5432-8903-efe4891c4c98_recording.mp4",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "2026_11_03_16_22__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 3_f047bda6-6609-5432-8903-efe4891c4c98_recording.mp4",
+        "relPath": "PSICOPATO/2026_11_03_16_22__ROCÍO DANIELA CONCHA PSICOPATOLOGÍA DE LA AUDICIÓN Y EL LENGUAJE_recording 3_f047bda6-6609-5432-8903-efe4891c4c98_recording.mp4",
+        "sizeMb": 157.92,
+        "ext": ".mp4",
+        "durationSec": 4936.6,
+        "durationMin": 82.3,
+        "resolution": "1280x798",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_psicopatologia_2026_11_03_16_22_ROC_O_DANIELA_CONCHA_PSICOPATOLOG_A_DE_LA_AUDICI_N_Y_EL_LENGUAJE_recording_3_f047bda6-6609-5432-8903-efe4891c4c98_recording.jpg"
+      },
+      {
         "id": "anatomia-1.mp4",
         "asignaturaId": "anatomia",
         "asignaturaNombre": "Anatomía, Fisiología y Neurología del Lenguaje",
@@ -63,6 +77,20 @@ window.MULTIMEDIA_CATALOG = {
         "thumbnail": "thumbnails/thumb_anatomia_2026_10_28_17_21_SARA_PRIETO_ANATOM_A_FISIOLOG_A_Y_NEUROLOG_A_DEL_LENGUAJE_recording_2_bdc4e04e-1db2-5bdd-8211-d5eea4cd7e69_recording.jpg"
       },
       {
+        "id": "anatomia-2026_11_04_16_41__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 3_8c455bd2-5e7e-53c5-8579-c57e49cc1c1e_recording.mp4",
+        "asignaturaId": "anatomia",
+        "asignaturaNombre": "Anatomía, Fisiología y Neurología del Lenguaje",
+        "nombre": "2026_11_04_16_41__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 3_8c455bd2-5e7e-53c5-8579-c57e49cc1c1e_recording.mp4",
+        "relPath": "anatomia/2026_11_04_16_41__SARA PRIETO ANATOMÍA FISIOLOGÍA Y NEUROLOGÍA DEL LENGUAJE_recording 3_8c455bd2-5e7e-53c5-8579-c57e49cc1c1e_recording.mp4",
+        "sizeMb": 244.74,
+        "ext": ".mp4",
+        "durationSec": 6092.3,
+        "durationMin": 101.5,
+        "resolution": "2294x1080",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_anatomia_2026_11_04_16_41_SARA_PRIETO_ANATOM_A_FISIOLOG_A_Y_NEUROLOG_A_DEL_LENGUAJE_recording_3_8c455bd2-5e7e-53c5-8579-c57e49cc1c1e_recording.jpg"
+      },
+      {
         "id": "oral-1.mp4",
         "asignaturaId": "oral",
         "asignaturaNombre": "Evaluación e Intervención en los Trastornos del Lenguaje Oral",
@@ -89,6 +117,20 @@ window.MULTIMEDIA_CATALOG = {
         "resolution": "1664x1080",
         "fps": 25.0,
         "thumbnail": "thumbnails/thumb_oral_2026_10_27_18_20_SORAYA_RODR_GUEZ_EITL_ORAL_recording_2_be72c45a-b71b-51eb-b277-5f0cc3fd7c17_recording.jpg"
+      },
+      {
+        "id": "oral-2026_11_03_19_48__SORAYA RODRÍGUEZ EITL ORAL_recording 3_df9d28e6-c60f-52ae-89b8-eb738f211c67_recording.mp4",
+        "asignaturaId": "oral",
+        "asignaturaNombre": "Evaluación e Intervención en los Trastornos del Lenguaje Oral",
+        "nombre": "2026_11_03_19_48__SORAYA RODRÍGUEZ EITL ORAL_recording 3_df9d28e6-c60f-52ae-89b8-eb738f211c67_recording.mp4",
+        "relPath": "TRASTORN. ORAL/2026_11_03_19_48__SORAYA RODRÍGUEZ EITL ORAL_recording 3_df9d28e6-c60f-52ae-89b8-eb738f211c67_recording.mp4",
+        "sizeMb": 453.7,
+        "ext": ".mp4",
+        "durationSec": 9778.9,
+        "durationMin": 163.0,
+        "resolution": "1496x842",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_oral_2026_11_03_19_48_SORAYA_RODR_GUEZ_EITL_ORAL_recording_3_df9d28e6-c60f-52ae-89b8-eb738f211c67_recording.jpg"
       },
       {
         "id": "escrita-1.mp4",
@@ -187,6 +229,20 @@ window.MULTIMEDIA_CATALOG = {
         "resolution": "1966x1044",
         "fps": 25.0,
         "thumbnail": "thumbnails/thumb_saac_2026_10_28_18_39_C_SAR_L_PEZ_SAAC_Y_TIC_recording_2_6991fe0f-2e5c-5e25-b716-c5403425ce97_recording.jpg"
+      },
+      {
+        "id": "saac-2026_11_04_18_13__CÉSAR LÓPEZ SAAC Y TIC_recording 3_f05a8c20-11a0-5384-9868-dafe4153e687_recording.mp4",
+        "asignaturaId": "saac",
+        "asignaturaNombre": "Sistemas Aumentativos y Alternativos de la Comunicación y las TIC",
+        "nombre": "2026_11_04_18_13__CÉSAR LÓPEZ SAAC Y TIC_recording 3_f05a8c20-11a0-5384-9868-dafe4153e687_recording.mp4",
+        "relPath": "TIC/2026_11_04_18_13__CÉSAR LÓPEZ SAAC Y TIC_recording 3_f05a8c20-11a0-5384-9868-dafe4153e687_recording.mp4",
+        "sizeMb": 110.83,
+        "ext": ".mp4",
+        "durationSec": 4261.4,
+        "durationMin": 71.0,
+        "resolution": "1280x720",
+        "fps": 25.0,
+        "thumbnail": "thumbnails/thumb_saac_2026_11_04_18_13_C_SAR_L_PEZ_SAAC_Y_TIC_recording_3_f05a8c20-11a0-5384-9868-dafe4153e687_recording.jpg"
       }
     ],
     "pdfs": [
