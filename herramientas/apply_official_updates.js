@@ -92,12 +92,19 @@ for (const e of AL_DATA.entregas) {
 
 // TALLERES 1
 if (entregasMap['psico-taller-1']) {
+  const psicoMdPath = path.join(rootDir, 'PSICOPATO', 'ENTREGA_SESION_PRACTICA_1_RESUELTA_10.md');
+  const psicoMdText = fs.existsSync(psicoMdPath) ? fs.readFileSync(psicoMdPath, 'utf8') : "";
   Object.assign(entregasMap['psico-taller-1'], {
     fechaRecomendada: "2026-11-06",
     titulo: "Sesión Práctica 1: Elección de 1 Caso Real (Lucía, Álvaro o Mario - Unidad 2)",
     archivoEnunciado: "PSICOPATO/sesión práctica 1.pdf",
+    plantillaTarea: psicoMdText || entregasMap['psico-taller-1'].plantillaTarea,
     archivosAdjuntos: [
-      { titulo: "📄 Enunciado Oficial (Sesión Práctica 1)", path: "PSICOPATO/sesión práctica 1.pdf", tipo: "pdf" }
+      { titulo: "🏆 Entrega Oficial Lista en PDF — Caso 1: Lucía (TL/TDL) [10/10]", path: "PSICOPATO/ENTREGA_SESION_PRACTICA_1_RESUELTA_10.pdf", tipo: "pdf" },
+      { titulo: "📝 Trabajo Editable en Word — Caso 1: Lucía (.docx)", path: "PSICOPATO/ENTREGA_SESION_PRACTICA_1_RESUELTA_10.docx", tipo: "doc" },
+      { titulo: "📄 Alternativa Lista en PDF — Caso 2: Álvaro (TSH)", path: "PSICOPATO/ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.pdf", tipo: "pdf" },
+      { titulo: "📄 Alternativa Lista en PDF — Caso 3: Mario (TFI / Tartamudez)", path: "PSICOPATO/ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.pdf", tipo: "pdf" },
+      { titulo: "📄 Enunciado Oficial en Blanco (Sesión Práctica 1)", path: "PSICOPATO/sesión práctica 1.pdf", tipo: "pdf" }
     ]
   });
 }

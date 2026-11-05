@@ -1,9 +1,9 @@
 window.MULTIMEDIA_CATALOG = {
-  "lastUpdated": "2026-11-05T08:36:29.482061",
+  "lastUpdated": "2026-11-05T08:56:20.482812",
   "totalVideos": 17,
-  "totalPdfs": 59,
+  "totalPdfs": 62,
   "totalImages": 4,
-  "totalDocs": 9,
+  "totalDocs": 12,
   "files": {
     "videos": [
       {
@@ -278,6 +278,39 @@ window.MULTIMEDIA_CATALOG = {
         "ext": ".pdf",
         "numPages": 5,
         "previewText": "CURSO 2026/2027  PSICOPATOLOGÍA DE LA  AUDICIÓN Y EL LENGUAJE    PORTFOLIO  Enunciado: Presentación resumen de todo lo visto y trabajado Psicopatología de la  audición y el lenguaje, a elaborar de forma individual.     Contenido relacionado con la actividad: Toda la asignatura.   Debe incluir un análisis y autoevaluación de los contenidos de la asignatura y las  actividades realizadas a lo largo del cuatrimestre: sesiones de clase, contenidos,  trabajos, calificaciones obtenidas, expectativas previas, conclusiones, etc. Cada  estudiante debe elaborar una presentación de forma que sea evidente"
+      },
+      {
+        "id": "psicopatologia-ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.pdf",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.pdf",
+        "relPath": "PSICOPATO/ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.pdf",
+        "sizeMb": 0.29,
+        "ext": ".pdf",
+        "numPages": 6,
+        "previewText": "CURSO 2026/2027  PSICOPATOLOGÍA DE LA  AUDICIÓN Y EL LENGUAJE    SESIÓN PRÁCTICA 1  Enunciado: CASO REAL. APRENDIZAJE BASADO EN CASOS    Contenido relacionado con la actividad: UNIDAD 2    Objetivos a lograr:  -  Describir la problemática relacionada con el caso de estudio.  -  Presentar una o más soluciones o respuestas razonables y justificadas para la  resolución de la problemática planteada en el caso.    Observaciones o criterios a tener en cuenta:  - La actividad entregada debe cumplir con las indicaciones facilitadas, entregarse  en tiempo y forma a través del campus virtual Blackboard"
+      },
+      {
+        "id": "psicopatologia-ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.pdf",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.pdf",
+        "relPath": "PSICOPATO/ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.pdf",
+        "sizeMb": 0.31,
+        "ext": ".pdf",
+        "numPages": 6,
+        "previewText": "CURSO 2026/2027  PSICOPATOLOGÍA DE LA  AUDICIÓN Y EL LENGUAJE    SESIÓN PRÁCTICA 1  Enunciado: CASO REAL. APRENDIZAJE BASADO EN CASOS    Contenido relacionado con la actividad: UNIDAD 2    Objetivos a lograr:  -  Describir la problemática relacionada con el caso de estudio.  -  Presentar una o más soluciones o respuestas razonables y justificadas para la  resolución de la problemática planteada en el caso.    Observaciones o criterios a tener en cuenta:  - La actividad entregada debe cumplir con las indicaciones facilitadas, entregarse  en tiempo y forma a través del campus virtual Blackboard"
+      },
+      {
+        "id": "psicopatologia-ENTREGA_SESION_PRACTICA_1_RESUELTA_10.pdf",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "ENTREGA_SESION_PRACTICA_1_RESUELTA_10.pdf",
+        "relPath": "PSICOPATO/ENTREGA_SESION_PRACTICA_1_RESUELTA_10.pdf",
+        "sizeMb": 0.29,
+        "ext": ".pdf",
+        "numPages": 6,
+        "previewText": "CURSO 2026/2027  PSICOPATOLOGÍA DE LA  AUDICIÓN Y EL LENGUAJE    SESIÓN PRÁCTICA 1  Enunciado: CASO REAL. APRENDIZAJE BASADO EN CASOS    Contenido relacionado con la actividad: UNIDAD 2    Objetivos a lograr:  -  Describir la problemática relacionada con el caso de estudio.  -  Presentar una o más soluciones o respuestas razonables y justificadas para la  resolución de la problemática planteada en el caso.    Observaciones o criterios a tener en cuenta:  - La actividad entregada debe cumplir con las indicaciones facilitadas, entregarse  en tiempo y forma a través del campus virtual Blackboard"
       },
       {
         "id": "psicopatologia-Planificación_Rocío Daniela Concha Ortiz_Psicopatología de la audición y el lenguaje_Semestre1 (1).pdf",
@@ -939,6 +972,33 @@ window.MULTIMEDIA_CATALOG = {
       }
     ],
     "docs": [
+      {
+        "id": "psicopatologia-ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.docx",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.docx",
+        "relPath": "PSICOPATO/ENTREGA_SESION_PRACTICA_1_CASO2_ALVARO.docx",
+        "sizeMb": 0.04,
+        "ext": ".docx"
+      },
+      {
+        "id": "psicopatologia-ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.docx",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.docx",
+        "relPath": "PSICOPATO/ENTREGA_SESION_PRACTICA_1_CASO3_MARIO.docx",
+        "sizeMb": 0.04,
+        "ext": ".docx"
+      },
+      {
+        "id": "psicopatologia-ENTREGA_SESION_PRACTICA_1_RESUELTA_10.docx",
+        "asignaturaId": "psicopatologia",
+        "asignaturaNombre": "Psicopatología de la Audición y el Lenguaje",
+        "nombre": "ENTREGA_SESION_PRACTICA_1_RESUELTA_10.docx",
+        "relPath": "PSICOPATO/ENTREGA_SESION_PRACTICA_1_RESUELTA_10.docx",
+        "sizeMb": 0.04,
+        "ext": ".docx"
+      },
       {
         "id": "anatomia-ENTREGA_ACTIVIDAD_1_RESUELTA_10.docx",
         "asignaturaId": "anatomia",
